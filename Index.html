@@ -2535,5 +2535,23 @@
       lucide.createIcons();
     });
   </script>
+  <!-- Floating WhatsApp & App Share Button -->
+<button onclick="shareBuxarMedsApp()" style="position:fixed; bottom:84px; right:16px; z-index:9999; background:#059669; color:#ffffff; border:2px solid #ffffff; border-radius:50px; padding:10px 16px; font-weight:700; font-size:13px; box-shadow:0 4px 12px rgba(0,0,0,0.25); display:flex; align-items:center; gap:6px; cursor:pointer;">
+  <span>📲 ऐप शेयर करें</span>
+</button>
+<script>
+function shareBuxarMedsApp() {
+  const shareText = "💊 *Buxar Meds 24x7* - अब बक्सर में घर बैठे दवाई मंगवाएं 20% फ्लैट छूट के साथ! 15-25 मिनट में तेज़ डिलीवरी।\n\nऐप लिंक: https://studycafebxr1234-droid.github.io/Buxarmeds/";
+  if (navigator.share) {
+    navigator.share({
+      title: 'Buxar Meds 24x7',
+      text: shareText,
+      url: 'https://studycafebxr1234-droid.github.io/Buxarmeds/'
+    }).catch(() => {});
+  } else {
+    window.open('https://wa.me/?text=' + encodeURIComponent(shareText), '_blank');
+  }
+}
+</script>
 </body>
 </html>
