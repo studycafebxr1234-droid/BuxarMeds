@@ -1,0 +1,2539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buxar Meds 24x7 | 15–25 Mins Express Medicine Delivery in Buxar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Noto Sans Devanagari', 'sans-serif'],
+          },
+          colors: {
+            medgreen: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            medteal: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              600: '#0d9488',
+              700: '#0f766e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    @keyframes pulseRing {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.6); }
+      70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(5, 150, 105, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+    }
+    .live-pulse {
+      animation: pulseRing 2s infinite;
+    }
+    .slide-up {
+      animation: slideUp 0.25s ease-out forwards;
+    }
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-28">
+
+  <!-- TOP EXPRESS DELIVERY & LOCATION BAR -->
+  <div class="bg-gradient-to-r from-emerald-800 via-emerald-700 to-teal-700 text-white text-[11px] sm:text-xs py-2 px-3 shadow-sm">
+    <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 font-semibold">
+        <span class="inline-flex items-center gap-1 bg-amber-400 text-slate-950 px-2 py-0.5 rounded-full font-extrabold text-[10px] uppercase tracking-wide">
+          <i data-lucide="zap" class="w-3 h-3 fill-current"></i> 15–25 मिनट
+        </span>
+        <span>पूरे <strong>बक्सर (Buxar - 802101)</strong> में 24x7 सुपरफास्ट डिलीवरी</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="hidden sm:inline-flex items-center gap-1 bg-white/15 px-2 py-0.5 rounded-full text-[10px]">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-ping"></span> 24x7 इमरजेंसी सेवा चालू
+        </span>
+        <a href="tel:+917870564801" class="inline-flex items-center gap-1 bg-white text-emerald-900 font-bold px-2.5 py-0.5 rounded-full text-[11px] hover:bg-emerald-50 transition">
+          <i data-lucide="phone-call" class="w-3 h-3"></i> +91 7870564801
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY HEADER & ROLE SWITCHER -->
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-30 border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-5xl mx-auto px-3 sm:px-4 py-3">
+      <div class="flex items-center justify-between gap-2">
+        <!-- Brand Identity -->
+        <div onclick="switchRole('customer')" class="flex items-center gap-2.5 cursor-pointer">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-600 text-white flex items-center justify-center shadow-md shadow-emerald-600/20">
+            <i data-lucide="cross" class="w-6 h-6 stroke-[2.5]"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <h1 class="text-base sm:text-lg font-black tracking-tight text-slate-900">Buxar Meds</h1>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-extrabold px-1.5 py-0.5 rounded">24x7</span>
+            </div>
+            <p class="text-[11px] text-emerald-800 font-bold flex items-center gap-1">
+              बक्सर की अपनी 24x7 ऑनलाइन मेडिकल सर्विस
+            </p>
+          </div>
+        </div>
+
+        <!-- Role Switcher Pills -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
+          <button onclick="switchRole('customer')" id="nav-customer" class="role-pill px-2.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-sm flex items-center gap-1 whitespace-nowrap transition">
+            <i data-lucide="store" class="w-3.5 h-3.5"></i> <span>दवाइयाँ (Store)</span>
+          </button>
+          <button onclick="openPrescriptionModal()" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200 hover:bg-emerald-100 flex items-center gap-1 whitespace-nowrap transition">
+            <i data-lucide="file-plus-2" class="w-3.5 h-3.5 text-emerald-600"></i> <span>पर्ची भेजें (Rx)</span>
+          </button>
+          <button onclick="openSymptomModal()" class="px-2.5 py-1.5 rounded-xl text-xs font-bold bg-rose-50 text-rose-800 border border-rose-200 hover:bg-rose-100 flex items-center gap-1 whitespace-nowrap transition">
+            <i data-lucide="stethoscope" class="w-3.5 h-3.5 text-rose-600"></i> <span>परेशानी बताएं (Help)</span>
+          </button>
+          <button onclick="switchRole('tracker')" id="nav-tracker" class="role-pill px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 whitespace-nowrap transition relative">
+            <i data-lucide="navigation" class="w-3.5 h-3.5 text-emerald-600"></i> <span>ऑर्डर ट्रैक (Track)</span>
+            <span id="active-order-dot" class="hidden w-2 h-2 rounded-full bg-amber-500"></span>
+          </button>
+          <button onclick="requestRoleAccess('rider')" id="nav-rider" class="role-pill px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 whitespace-nowrap transition">
+            <i data-lucide="bike" class="w-3.5 h-3.5 text-teal-600"></i> <span>Rider</span>
+          </button>
+          <button onclick="requestRoleAccess('owner')" id="nav-owner" class="role-pill px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-100 text-slate-700 hover:bg-slate-200 flex items-center gap-1 whitespace-nowrap transition">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-600"></i> <span>Owner</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Smart Search Bar (Shown in Customer Mode) -->
+      <div id="header-search-bar" class="mt-3 relative">
+        <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+        <input 
+          type="text" 
+          id="smart-search-input" 
+          oninput="handleSearch()"
+          placeholder="दवाई का नाम लिखें (जैसे: Dolo 650, Pan-D, BP मशीन, बुखार, गैस)..." 
+          class="w-full bg-slate-100/90 border border-slate-200 rounded-xl pl-10 pr-10 py-2.5 text-xs sm:text-sm font-medium text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"
+        >
+        <button id="clear-search-btn" onclick="clearSearch()" class="hidden absolute right-3 top-2.5 text-slate-400 hover:text-slate-600 p-0.5">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-5xl mx-auto px-3 sm:px-4 pt-4">
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 1: CUSTOMER STOREFRONT (TATA 1MG / PHARMEASY / BLINKIT STYLE)    -->
+    <!-- ===================================================================== -->
+    <section id="view-customer" class="space-y-5">
+
+      <!-- HERO PROMO BANNER -->
+      <div class="bg-gradient-to-br from-emerald-700 via-emerald-600 to-teal-700 rounded-3xl p-5 sm:p-6 text-white shadow-lg relative overflow-hidden">
+        <div class="relative z-10 max-w-2xl space-y-2.5">
+          <div class="inline-flex items-center gap-1.5 bg-amber-400 text-slate-950 text-[11px] font-black px-3 py-1 rounded-full shadow-sm">
+            <i data-lucide="badge-percent" class="w-3.5 h-3.5"></i> हर ऑर्डर पर 20% की पक्की छूट (FLAT 20% OFF)
+          </div>
+          <h2 class="text-xl sm:text-3xl font-black leading-tight tracking-tight">
+            अब घर बैठे ही दवाइयाँ मंगवाएं — पूरे बक्सर शहर में <span class="text-amber-300 underline decoration-amber-300/60">15–25 मिनट में सुपरफास्ट होम डिलीवरी</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-emerald-50/95 font-medium max-w-xl">
+            बक्सर के विश्वसनीय मेडिकल स्टोर से सीधे असली ब्रांडेड दवाइयाँ और मेडिकल मशीन, पक्के बिल और एक्सपायरी चेक के साथ आपके दरवाजे पर।
+          </p>
+          <div class="pt-1 flex flex-wrap items-center gap-2 text-[11px] font-semibold text-emerald-100">
+            <span class="inline-flex items-center gap-1 bg-white/15 px-2.5 py-1 rounded-lg"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-amber-300"></i> 100% असली ब्रांडेड दवाइयाँ</span>
+            <span class="inline-flex items-center gap-1 bg-white/15 px-2.5 py-1 rounded-lg"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-300"></i> फार्मासिस्ट वेरिफाइड</span>
+            <span class="inline-flex items-center gap-1 bg-white/15 px-2.5 py-1 rounded-lg"><i data-lucide="wallet" class="w-3.5 h-3.5 text-amber-300"></i> कैश ऑन डिलीवरी / UPI उपलब्ध</span>
+          </div>
+        </div>
+        <div class="absolute -right-12 -bottom-16 w-56 h-56 rounded-full bg-teal-400/20 blur-2xl pointer-events-none"></div>
+      </div>
+
+      <!-- 3-COLUMN HERO QUICK ACTION CARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <!-- Card A: Order with Prescription -->
+        <button onclick="openPrescriptionModal()" class="text-left bg-white hover:bg-emerald-50/60 border-2 border-emerald-200 hover:border-emerald-500 rounded-2xl p-4 shadow-sm transition group flex items-center sm:items-start gap-3.5">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-105 transition">
+            <i data-lucide="file-plus-2" class="w-6 h-6"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">Flat 20% Off</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-emerald-600"></i>
+            </div>
+            <h3 class="text-sm font-black text-slate-900 mt-1">पर्ची भेजें और दवाई मंगवाएं</h3>
+            <p class="text-[11px] text-slate-600 mt-0.5 leading-snug">डॉक्टर की पर्ची की फोटो अपलोड करें, बाकी काम हम पर छोड़ दें!</p>
+          </div>
+        </button>
+
+        <!-- Card B: Symptom Consultation -->
+        <button onclick="openSymptomModal()" class="text-left bg-gradient-to-br from-rose-50 to-amber-50/70 hover:from-rose-100/70 hover:to-amber-100/70 border-2 border-rose-200 hover:border-rose-400 rounded-2xl p-4 shadow-sm transition group flex items-center sm:items-start gap-3.5">
+          <div class="w-12 h-12 rounded-2xl bg-rose-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-105 transition">
+            <i data-lucide="stethoscope" class="w-6 h-6"></i>
+          </div>
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider text-rose-700 bg-rose-100 px-2 py-0.5 rounded">बिना पर्ची मदद</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-rose-500"></i>
+            </div>
+            <h3 class="text-sm font-black text-slate-900 mt-1">दवाई का नाम नहीं पता? परेशानी बताएं</h3>
+            <p class="text-[11px] text-slate-600 mt-0.5 leading-snug">अपनी तकलीफ और लक्षण बताएं, फार्मासिस्ट से सही दवाई घर पाएं</p>
+          </div>
+        </button>
+
+        <!-- Card C: 24x7 Emergency Call & WhatsApp -->
+        <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+          <div class="flex items-start gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center flex-shrink-0">
+              <i data-lucide="headset" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider text-teal-700 bg-teal-50 px-2 py-0.5 rounded">रात हो या दिन • 24x7</span>
+              <h3 class="text-sm font-black text-slate-900 mt-1">सीधे कॉल या WhatsApp ऑर्डर</h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">इमरजेंसी में सीधे फोन पर दवाई लिखवाएं</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-2 mt-3">
+            <a href="tel:+917870564801" class="bg-slate-900 hover:bg-slate-800 text-white text-[11px] font-bold py-2 px-2 rounded-xl flex items-center justify-center gap-1 transition">
+              <i data-lucide="phone" class="w-3 h-3 text-emerald-400"></i> कॉल करें
+            </a>
+            <a href="https://wa.me/917870564801?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20Buxar%20Meds!%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%98%E0%A4%B0%20%E0%A4%AC%E0%A5%88%E0%A4%A0%E0%A5%87%20%E0%A4%A6%E0%A4%B5%E0%A4%BE%E0%A4%88%20%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A5%80%20%E0%A4%B9%E0%A5%88%E0%A5%A4" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-bold py-2 px-2 rounded-xl flex items-center justify-center gap-1 transition">
+              <i data-lucide="message-circle" class="w-3 h-3"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CATEGORY FILTER PILLS -->
+      <div class="space-y-2">
+        <div class="flex items-center justify-between">
+          <h3 class="text-xs font-extrabold text-slate-700">जरूरत के अनुसार दवाई चुनें (Shop by Category)</h3>
+          <span id="catalog-count-label" class="text-xs font-bold text-emerald-700">14 ब्रांडेड दवाइयाँ</span>
+        </div>
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+          <button onclick="selectCategory('all')" id="cat-btn-all" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-emerald-600 text-white shadow-sm whitespace-nowrap transition">
+            सभी (All)
+          </button>
+          <button onclick="selectCategory('Fever & Pain')" id="cat-btn-Fever & Pain" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            🤒 बुखार और दर्द (Fever & Pain)
+          </button>
+          <button onclick="selectCategory('Gastric')" id="cat-btn-Gastric" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            🫃 गैस और पेट (Gastric)
+          </button>
+          <button onclick="selectCategory('Cold & Cough')" id="cat-btn-Cold & Cough" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            🤧 सर्दी-खांसी (Cold & Cough)
+          </button>
+          <button onclick="selectCategory('Medical Devices')" id="cat-btn-Medical Devices" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            🩺 मेडिकल मशीन (Devices)
+          </button>
+          <button onclick="selectCategory('Mother & Baby')" id="cat-btn-Mother & Baby" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            👶 बेबी केयर (Mother & Baby)
+          </button>
+          <button onclick="selectCategory('First Aid')" id="cat-btn-First Aid" class="cat-filter-btn px-3.5 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-emerald-400 whitespace-nowrap transition">
+            🩹 फर्स्ट एड (First Aid)
+          </button>
+        </div>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- EMPTY SEARCH FALLBACK -->
+      <div id="empty-search-state" class="hidden bg-white rounded-3xl border border-dashed border-slate-300 p-8 text-center space-y-3">
+        <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center mx-auto">
+          <i data-lucide="search-x" class="w-7 h-7"></i>
+        </div>
+        <h4 class="text-base font-extrabold text-slate-900">आपकी दवाई इस लिस्ट में नहीं दिख रही है?</h4>
+        <p class="text-xs text-slate-500 max-w-md mx-auto">
+          चिंता न करें! हम बक्सर के बड़े मेडिकल स्टोर से हर ब्रांडेड दवाई मंगवाकर देते हैं। अपनी पर्ची की फोटो भेजें या अपनी परेशानी लिखें।
+        </p>
+        <div class="flex flex-wrap justify-center gap-2 pt-1">
+          <button onclick="openPrescriptionModal()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm">
+            पर्ची भेजें और दवाई मंगवाएं
+          </button>
+          <button onclick="openSymptomModal()" class="bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-sm">
+            परेशानी बताएं (Symptom Help)
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 2: BLINKIT-STYLE LIVE ORDER TRACKER                              -->
+    <!-- ===================================================================== -->
+    <section id="view-tracker" class="hidden space-y-4 slide-up">
+      <div class="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
+          <div>
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">लाइव डिलीवरी स्टेटस (Live Tracking)</span>
+            <h2 class="text-lg sm:text-xl font-black text-slate-900 mt-1">अपने ऑर्डर की लाइव स्थिति देखें</h2>
+          </div>
+          <!-- Order ID Lookup -->
+          <div class="flex items-center gap-2">
+            <input type="text" id="track-order-id-input" placeholder="ऑर्डर ID लिखें (जैसे: BXR-8492)" class="bg-slate-100 border border-slate-200 rounded-xl px-3 py-2 text-xs font-bold uppercase focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <button onclick="lookupOrderById()" class="bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">
+              खोजें (Track)
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Tracked Order Card -->
+        <div id="tracker-content-area">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 3: DELIVERY PARTNER (RIDER) MODE (PIN: 2026)                     -->
+    <!-- ===================================================================== -->
+    <section id="view-rider" class="hidden space-y-4 slide-up">
+      <!-- Rider Top Status Banner -->
+      <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-teal-900 text-white rounded-3xl p-5 shadow-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-white/10 pb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500 text-slate-950 flex items-center justify-center font-black text-lg shadow">
+              <i data-lucide="bike" class="w-6 h-6"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h2 class="text-base sm:text-lg font-black">Rider App: Ajeet Kumar</h2>
+                <span class="text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 px-2 py-0.5 rounded-full font-bold">Buxar Zone</span>
+              </div>
+              <p class="text-xs text-slate-300">Express Medical Delivery Partner • +91 7870564801</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button onclick="toggleRiderDuty()" id="rider-duty-btn" class="px-3.5 py-2 rounded-xl text-xs font-extrabold bg-emerald-500 text-slate-950 flex items-center gap-1.5 shadow transition">
+              <span class="w-2 h-2 rounded-full bg-slate-950 animate-ping"></span>
+              <span id="rider-duty-label">ONLINE • Ready for Orders</span>
+            </button>
+            <button onclick="logoutRole('rider')" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs" title="Lock Rider Mode">
+              <i data-lucide="log-out" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Rider Quick Metrics -->
+        <div class="grid grid-cols-3 gap-3 pt-4 text-center">
+          <div class="bg-white/5 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-300">Active Queue</p>
+            <p id="rider-active-count" class="text-xl font-black text-amber-400 mt-0.5">0</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-300">Delivered Today</p>
+            <p id="rider-completed-count" class="text-xl font-black text-emerald-400 mt-0.5">0</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-300">Cash/UPI to Collect</p>
+            <p id="rider-collect-amount" class="text-xl font-black text-white mt-0.5">₹0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rider Delivery Tasks List -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h3 class="text-sm font-extrabold text-slate-900">Active Pharmacy Pickups & Deliveries</h3>
+          <span class="text-xs text-slate-500">Tap step buttons to update customer live tracker</span>
+        </div>
+        <div id="rider-orders-list" class="space-y-3">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- VIEW 4: OWNER ADMIN DASHBOARD (PIN: 1997)                             -->
+    <!-- ===================================================================== -->
+    <section id="view-owner" class="hidden space-y-4 slide-up">
+      <!-- Owner Header -->
+      <div class="bg-slate-900 text-white rounded-3xl p-5 shadow-lg space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
+          <div>
+            <span class="text-[10px] font-extrabold uppercase tracking-wider bg-amber-400 text-slate-950 px-2.5 py-0.5 rounded-full">Owner Control Panel</span>
+            <h2 class="text-lg sm:text-xl font-black mt-1">Buxar Meds 24x7 Command Center</h2>
+            <p class="text-xs text-slate-400">Manage Branded Inventory, Wholesale Margins & All Live Orders</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button onclick="openAdminProductModal(null)" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow">
+              <i data-lucide="plus-circle" class="w-4 h-4"></i> Add Medicine / Device
+            </button>
+            <button onclick="logoutRole('owner')" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1">
+              <i data-lucide="lock" class="w-3.5 h-3.5"></i> Lock
+            </button>
+          </div>
+        </div>
+
+        <!-- Business Analytics Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <div class="bg-slate-800/80 border border-slate-700/70 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-400">Total Orders</p>
+            <p id="admin-total-orders" class="text-xl font-black text-white mt-0.5">0</p>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/70 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-400">Total Revenue</p>
+            <p id="admin-total-revenue" class="text-xl font-black text-emerald-400 mt-0.5">₹0</p>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/70 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-400">Est. Net Profit</p>
+            <p id="admin-total-profit" class="text-xl font-black text-amber-400 mt-0.5">₹0</p>
+          </div>
+          <div class="bg-slate-800/80 border border-slate-700/70 rounded-2xl p-3">
+            <p class="text-[11px] text-slate-400">Pending Deliveries</p>
+            <p id="admin-pending-deliveries" class="text-xl font-black text-rose-400 mt-0.5">0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admin Sub-Tabs -->
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <button onclick="switchAdminSubTab('orders')" id="admin-subtab-orders" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-emerald-600 text-white shadow-sm transition">
+            All Live Orders (<span id="admin-orders-badge">0</span>)
+          </button>
+          <button onclick="switchAdminSubTab('catalog')" id="admin-subtab-catalog" class="px-4 py-2 rounded-xl text-xs font-extrabold bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition">
+            Medicine & Margin Manager (<span id="admin-catalog-badge">0</span>)
+          </button>
+        </div>
+        <button onclick="resetDemoData()" class="text-[11px] font-bold text-slate-500 hover:text-rose-600 underline">
+          Reset Demo Data
+        </button>
+      </div>
+
+      <!-- Admin Orders View -->
+      <div id="admin-panel-orders" class="space-y-3">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Admin Product Catalog View -->
+      <div id="admin-panel-catalog" class="hidden space-y-2.5">
+        <!-- Populated dynamically -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY BOTTOM BLINKIT-STYLE CART BAR                                  -->
+  <!-- ===================================================================== -->
+  <div id="sticky-cart-bar" class="hidden fixed bottom-3 left-3 right-3 z-30 max-w-2xl mx-auto">
+    <button onclick="openCartDrawer()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl p-3.5 shadow-xl shadow-emerald-900/25 flex items-center justify-between transition active:scale-[0.99]">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center font-black text-sm">
+          <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-extrabold"><span id="bar-item-count">0 दवाई</span> • <span id="bar-total-price" class="text-amber-300">₹0</span></p>
+          <p class="text-[11px] text-emerald-100 font-medium">आपकी कुल बचत: <strong id="bar-savings-amount" class="text-white">₹0</strong> (20% छूट)</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-1.5 bg-white text-emerald-800 font-extrabold text-xs px-3.5 py-2 rounded-xl shadow-sm">
+        <span>कार्ट देखें और ऑर्डर करें</span>
+        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+      </div>
+    </button>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 1: BLINKIT-STYLE CART & CHECKOUT DRAWER                         -->
+  <!-- ===================================================================== -->
+  <div id="modal-cart" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-lg rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[92vh] flex flex-col overflow-hidden slide-up">
+      <!-- Header -->
+      <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-emerald-50/60">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+            <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-slate-900">आपकी दवाइयों की टोकरी (Medicine Cart)</h3>
+            <p class="text-[11px] text-emerald-700 font-semibold">15–25 मिनट में होम डिलीवरी • बक्सर, बिहार</p>
+          </div>
+        </div>
+        <button onclick="closeCartDrawer()" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center hover:bg-slate-100">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <!-- Scrollable Body -->
+      <div class="p-4 overflow-y-auto space-y-4 flex-1">
+        <!-- Items List -->
+        <div id="cart-drawer-items" class="space-y-2.5">
+          <!-- Populated dynamically -->
+        </div>
+
+        <!-- Bill Summary -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-3.5 space-y-2 text-xs">
+          <h4 class="font-extrabold text-slate-800 uppercase tracking-wider text-[10px]">बिल विवरण (20% छूट लागू)</h4>
+          <div class="flex justify-between text-slate-600">
+            <span>कुल MRP राशि</span>
+            <span id="checkout-mrp" class="font-semibold">₹0</span>
+          </div>
+          <div class="flex justify-between text-emerald-700 font-bold">
+            <span>20% पक्की छूट (Flat Discount)</span>
+            <span id="checkout-discount">-₹0</span>
+          </div>
+          <div class="flex justify-between text-slate-600">
+            <span>होम डिलीवरी चार्ज <span class="text-[10px] text-emerald-600 font-semibold">(₹299 से ऊपर FREE)</span></span>
+            <span id="checkout-delivery" class="font-bold">₹30</span>
+          </div>
+          <div class="border-t border-slate-200 pt-2 flex justify-between text-sm font-black text-slate-900">
+            <span>कुल देय राशि (Grand Total)</span>
+            <span id="checkout-grand-total" class="text-emerald-700">₹0</span>
+          </div>
+        </div>
+
+        <!-- Customer Delivery Details Form -->
+        <div class="space-y-2.5">
+          <h4 class="text-xs font-extrabold text-slate-900">बक्सर में डिलीवरी का पता भरें</h4>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <input type="text" id="cust-name" placeholder="पूरा नाम (Full Name) *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <input type="tel" id="cust-phone" placeholder="मोबाइल नंबर (10 अंक) *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <label class="text-[11px] font-semibold text-slate-600">मकान नंबर, मोहल्ला / नजदीकी पहचान (Buxar) *</label>
+              <button type="button" onclick="captureGPSLocation('cust-address', 'gps-status-cart')" class="text-[11px] font-bold text-emerald-700 hover:text-emerald-800 inline-flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-lg border border-emerald-200">
+                <i data-lucide="locate-fixed" class="w-3 h-3"></i> लाइव GPS लोकेशन जोड़ें
+              </button>
+            </div>
+            <textarea id="cust-address" rows="2" placeholder="जैसे: ज्योति प्रकाश चौक के पास, स्टेशन रोड, बक्सर..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+            <p id="gps-status-cart" class="hidden text-[10px] font-semibold text-emerald-700"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer CTA -->
+      <div class="p-4 border-t border-slate-100 bg-white">
+        <button onclick="submitCartOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 rounded-2xl text-xs sm:text-sm shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2 transition active:scale-[0.99]">
+          <i data-lucide="check-circle" class="w-4 h-4"></i>
+          <span>ऑर्डर कन्फर्म करें और लाइव ट्रैक करें</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: ORDER WITH PRESCRIPTION (पर्ची भेजें और दवाई मंगवाएं)          -->
+  <!-- ===================================================================== -->
+  <div id="modal-prescription" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-md rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[92vh] flex flex-col overflow-hidden slide-up">
+      <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-emerald-50/70">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-slate-900">पर्ची भेजें और दवाई मंगवाएं</h3>
+            <p class="text-[11px] text-emerald-700 font-semibold">हर पर्ची पर 20% पक्की छूट • 100% असली ब्रांडेड दवाई</p>
+          </div>
+        </div>
+        <button onclick="closePrescriptionModal()" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto space-y-3.5">
+        <!-- Photo Upload Box -->
+        <label class="block border-2 border-dashed border-emerald-300 bg-emerald-50/40 hover:bg-emerald-50 rounded-2xl p-4 text-center cursor-pointer transition">
+          <input type="file" accept="image/*" capture="environment" onchange="previewPrescriptionFile(event)" class="hidden">
+          <div id="rx-upload-placeholder" class="space-y-1">
+            <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+              <i data-lucide="camera" class="w-5 h-5"></i>
+            </div>
+            <p class="text-xs font-extrabold text-slate-800">डॉक्टर की पर्ची की फोटो खींचें या गैलरी से चुनें</p>
+            <p class="text-[10px] text-slate-500">Tap to Capture or Upload Prescription Photo</p>
+          </div>
+          <div id="rx-preview-box" class="hidden space-y-2">
+            <img id="rx-preview-image" src="" alt="Prescription Preview" class="max-h-40 mx-auto rounded-xl border border-slate-200 shadow-xs">
+            <span class="inline-block text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full">पर्ची की फोटो जुड़ गई है ✓ (बदलने के लिए टैप करें)</span>
+          </div>
+        </label>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">दवाइयों के नाम या खास निर्देश (Optional)</label>
+          <textarea id="rx-notes" rows="2" placeholder="जैसे: पूरी पट्टी चाहिए, या केवल बुखार और गैस वाली दवाई भेजें..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <input type="text" id="rx-name" placeholder="मरीज / ग्राहक का नाम *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <input type="tel" id="rx-phone" placeholder="मोबाइल नंबर *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="text-[11px] font-bold text-slate-700">बक्सर का पूरा पता (Landmark) *</label>
+            <button type="button" onclick="captureGPSLocation('rx-address', 'gps-status-rx')" class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+              📍 GPS लोकेशन जोड़ें
+            </button>
+          </div>
+          <input type="text" id="rx-address" placeholder="जैसे: चरित्रवन, पॉलिटेक्निक के पास, बक्सर..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <p id="gps-status-rx" class="hidden text-[10px] font-semibold text-emerald-700 mt-1"></p>
+        </div>
+
+        <button onclick="submitPrescriptionOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 rounded-2xl text-xs sm:text-sm shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2 transition">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>पर्ची भेजें और WhatsApp पर ऑर्डर करें</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: परेशानी बताएं (SYMPTOM CONSULTATION & TOKEN VERIFICATION)    -->
+  <!-- ===================================================================== -->
+  <div id="modal-symptom" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-lg rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[93vh] flex flex-col overflow-hidden slide-up">
+      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-gradient-to-r from-rose-50 to-amber-50">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-rose-600 text-white flex items-center justify-center shadow-sm">
+            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-slate-900">परेशानी बताएं और दवाई मंगवाएं</h3>
+            <p class="text-[11px] text-rose-700 font-semibold">बक्सर के अनुभवी मेडिकल स्टोर से सलाह + होम डिलीवरी</p>
+          </div>
+        </div>
+        <button onclick="closeSymptomModal()" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto space-y-3.5">
+        <!-- Multi-Select Symptom Chips -->
+        <div>
+          <label class="block text-xs font-extrabold text-slate-800 mb-1.5">1. अपनी तकलीफ / लक्षण चुनें (Select Symptoms):</label>
+          <div id="symptom-chips-container" class="flex flex-wrap gap-1.5">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Patient Demographics -->
+        <div class="grid grid-cols-3 gap-2">
+          <div class="col-span-3 sm:col-span-1">
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">मरीज का नाम (Name) *</label>
+            <input type="text" id="sym-name" placeholder="मरीज का नाम" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">उम्र (Age) *</label>
+            <input type="number" id="sym-age" min="0" max="120" placeholder="उम्र (जैसे 28)" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">लिंग (Gender) *</label>
+            <select id="sym-gender" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-2 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+              <option value="पुरुष (Male)">पुरुष (Male)</option>
+              <option value="महिला (Female)">महिला (Female)</option>
+              <option value="अन्य (Other)">अन्य (Other)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Duration -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">कितने दिन से परेशानी है? (Duration) *</label>
+          <select id="sym-duration" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+            <option value="आज से ही (Since Today)">आज से ही (Since Today)</option>
+            <option value="1–2 दिन से (1–2 Days)">1–2 दिन से (1–2 Days)</option>
+            <option value="3–5 दिन से (3–5 Days)">3–5 दिन से (3–5 Days)</option>
+            <option value="1 हफ्ते या उससे ज्यादा से (1+ Week)">1 हफ्ते या उससे ज्यादा से (1+ Week)</option>
+          </select>
+        </div>
+
+        <!-- Detailed Description -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">परेशानी को विस्तार से लिखें (Problem Details)</label>
+          <textarea id="sym-details" rows="2" placeholder="जैसे: कल रात से तेज बुखार और शरीर में दर्द है, या खाना खाने के बाद गैस और जलन हो रही है..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+        </div>
+
+        <!-- Past Medical History / Allergies -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">पुरानी बीमारी या दवाई से एलर्जी (BP, Sugar, Asthma आदि)</label>
+          <input type="text" id="sym-history" placeholder="जैसे: कोई नहीं, या BP / Sugar की दवाई चलती है..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+        </div>
+
+        <!-- Contact & Buxar Address -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <input type="tel" id="sym-phone" placeholder="मोबाइल नंबर (10 अंक) *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          <input type="text" id="sym-address" placeholder="बक्सर का पूरा पता / मोहल्ला *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+        </div>
+
+        <!-- ANTI-FAKE ORDER TOKEN VERIFICATION BOX -->
+        <div class="bg-amber-50 border border-amber-300 rounded-2xl p-3.5 space-y-2.5">
+          <div class="flex items-start gap-2">
+            <i data-lucide="shield-check" class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="text-xs font-extrabold text-amber-950">सही ऑर्डर कन्फर्म करने के लिए ₹20 / ₹50 टोकन वेरिफिकेशन</h4>
+              <p class="text-[11px] text-amber-900 leading-snug mt-0.5">
+                फर्जी ऑर्डर रोकने के लिए ₹20 या ₹50 टोकन पेमेंट करें। <strong>यह पूरी राशि आपके फाइनल दवाई के बिल में से घटा (100% Adjust) दी जाएगी।</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-amber-200 p-2.5 flex items-center justify-between gap-2">
+            <!-- Custom SVG QR Badge -->
+            <div class="flex items-center gap-2.5">
+              <div class="w-12 h-12 rounded-lg bg-slate-900 text-white p-1.5 flex-shrink-0 flex items-center justify-center">
+                <svg viewBox="0 0 36 36" class="w-full h-full fill-current">
+                  <path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6zm18-4h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6zM2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2zm10-26h2v4h-2V2zm4 2h2v4h-2V4zm-4 6h4v2h-4v-2zm-2 4h6v2h-6v-2zm-12 2h4v2H2v-2zm6 0h4v4H8v-4zm6 2h4v2h-4v-2zm6-2h6v2h-6v-2zm8 0h4v4h-4v-4zm-14 6h2v6h-2v-6zm4 2h4v2h-4v-2zm6 0h4v6h-4v-6zm-8 6h6v2h-6v-2zm8 2h6v2h-6v-2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-slate-500 font-semibold">UPI ID (PhonePe / GPay / Paytm)</p>
+                <div class="flex items-center gap-1.5">
+                  <span class="font-mono font-black text-xs text-slate-900">7870564801@upi</span>
+                  <button type="button" onclick="copyUpiId()" class="text-[10px] font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded inline-flex items-center gap-0.5">
+                    <i data-lucide="copy" class="w-2.5 h-2.5"></i> कॉपी करें
+                  </button>
+                </div>
+                <p class="text-[10px] text-emerald-700 font-bold">Ajeet Kumar • Buxar Meds</p>
+              </div>
+            </div>
+
+            <a href="upi://pay?pa=7870564801@upi&pn=Buxar%20Meds&am=20&cu=INR" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-[11px] px-3 py-2 rounded-xl shadow-sm whitespace-nowrap transition">
+              ₹20 UPI पे करें
+            </a>
+          </div>
+
+          <input type="text" id="sym-utr" placeholder="पेमेंट के बाद 12-अंकों का UTR / Ref नंबर लिखें (Optional)" class="w-full bg-white border border-amber-200 rounded-xl px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+
+        <button onclick="submitSymptomOrder()" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-extrabold py-3.5 rounded-2xl text-xs sm:text-sm shadow-lg shadow-rose-600/25 flex items-center justify-center gap-2 transition">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>परेशानी भेजें और WhatsApp पर दवाई मंगवाएं</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 2: ORDER WITH PRESCRIPTION                                      -->
+  <!-- ===================================================================== -->
+  <div id="modal-prescription" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-md rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[92vh] flex flex-col overflow-hidden slide-up">
+      <div class="p-4 border-b border-slate-100 flex items-center justify-between bg-emerald-50/70">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-slate-900">Order with Doctor Prescription</h3>
+            <p class="text-[11px] text-emerald-700 font-semibold">Flat 20% OFF • 100% Genuine Branded</p>
+          </div>
+        </div>
+        <button onclick="closePrescriptionModal()" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto space-y-3.5">
+        <!-- Photo Upload Box -->
+        <label class="block border-2 border-dashed border-emerald-300 bg-emerald-50/40 hover:bg-emerald-50 rounded-2xl p-4 text-center cursor-pointer transition">
+          <input type="file" accept="image/*" capture="environment" onchange="previewPrescriptionFile(event)" class="hidden">
+          <div id="rx-upload-placeholder" class="space-y-1">
+            <div class="w-11 h-11 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+              <i data-lucide="camera" class="w-5 h-5"></i>
+            </div>
+            <p class="text-xs font-extrabold text-slate-800">Tap to Capture or Upload Prescription</p>
+            <p class="text-[10px] text-slate-500">Doctor slip photo (JPG, PNG)</p>
+          </div>
+          <div id="rx-preview-box" class="hidden space-y-2">
+            <img id="rx-preview-image" src="" alt="Prescription Preview" class="max-h-40 mx-auto rounded-xl border border-slate-200 shadow-xs">
+            <span class="inline-block text-[11px] font-bold text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full">Prescription Attached ✓ (Tap to change)</span>
+          </div>
+        </label>
+
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Medicine Names / Notes (Optional)</label>
+          <textarea id="rx-notes" rows="2" placeholder="Write medicine names or special instructions (e.g. Full strip chahiye)..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <input type="text" id="rx-name" placeholder="Patient / Customer Name *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <input type="tel" id="rx-phone" placeholder="Mobile Number *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="text-[11px] font-bold text-slate-700">Buxar Delivery Address *</label>
+            <button type="button" onclick="captureGPSLocation('rx-address', 'gps-status-rx')" class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+              📍 Use GPS
+            </button>
+          </div>
+          <input type="text" id="rx-address" placeholder="e.g. Charitravan, Near Polytechnic, Buxar..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <p id="gps-status-rx" class="hidden text-[10px] font-semibold text-emerald-700 mt-1"></p>
+        </div>
+
+        <button onclick="submitPrescriptionOrder()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3.5 rounded-2xl text-xs sm:text-sm shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2 transition">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Send Prescription & Open WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 3: परेशानी बताएं (SYMPTOM CONSULTATION & TOKEN VERIFICATION)    -->
+  <!-- ===================================================================== -->
+  <div id="modal-symptom" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-lg rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[93vh] flex flex-col overflow-hidden slide-up">
+      <div class="p-4 border-b border-rose-100 flex items-center justify-between bg-gradient-to-r from-rose-50 to-amber-50">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-xl bg-rose-600 text-white flex items-center justify-center shadow-sm">
+            <i data-lucide="stethoscope" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-slate-900">परेशानी बताएं (Symptom-Based Help)</h3>
+            <p class="text-[11px] text-rose-700 font-semibold">Licensed Buxar Chemist Consultation + Express Delivery</p>
+          </div>
+        </div>
+        <button onclick="closeSymptomModal()" class="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-600 flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <div class="p-4 overflow-y-auto space-y-3.5">
+        <!-- Multi-Select Symptom Chips -->
+        <div>
+          <label class="block text-xs font-extrabold text-slate-800 mb-1.5">1. लक्षण चुनें (Select Symptoms):</label>
+          <div id="symptom-chips-container" class="flex flex-wrap gap-1.5">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+
+        <!-- Patient Demographics -->
+        <div class="grid grid-cols-3 gap-2">
+          <div class="col-span-3 sm:col-span-1">
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">Patient Name *</label>
+            <input type="text" id="sym-name" placeholder="मरीज का नाम" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">Age (Years) *</label>
+            <input type="number" id="sym-age" min="0" max="120" placeholder="उम्र (e.g. 28)" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          </div>
+          <div>
+            <label class="block text-[11px] font-bold text-slate-700 mb-1">Gender / Sex *</label>
+            <select id="sym-gender" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-2 text-xs font-medium focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+              <option value="Male">Male (पुरुष)</option>
+              <option value="Female">Female (महिला)</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Duration -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">कितने दिन से परेशानी है? (Duration) *</label>
+          <select id="sym-duration" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs font-semibold text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+            <option value="आज से ही (Since Today)">आज से ही (Since Today)</option>
+            <option value="1–2 दिन से (1–2 Days)">1–2 दिन से (1–2 Days)</option>
+            <option value="3–5 दिन से (3–5 Days)">3–5 दिन से (3–5 Days)</option>
+            <option value="1 हफ्ते या उससे ज्यादा से (1+ Week)">1 हफ्ते या उससे ज्यादा से (1+ Week)</option>
+          </select>
+        </div>
+
+        <!-- Detailed Description -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">विस्तार से परेशानी लिखें (Detailed Problem Description)</label>
+          <textarea id="sym-details" rows="2" placeholder="जैसे: कल रात से तेज बुखार और शरीर में दर्द है, या खाना खाने के बाद गैस बन रही है..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+        </div>
+
+        <!-- Past Medical History / Allergies -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Past Medical History / Drug Allergies (BP, Sugar, Asthma, None)</label>
+          <input type="text" id="sym-history" placeholder="e.g. None, ya Sugar/BP ki dawa chalti hai..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+        </div>
+
+        <!-- Contact & Buxar Address -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <input type="tel" id="sym-phone" placeholder="Mobile Number (10 digits) *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+          <input type="text" id="sym-address" placeholder="Buxar Address / Landmark *" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-2 focus:ring-rose-500">
+        </div>
+
+        <!-- ANTI-FAKE ORDER TOKEN VERIFICATION BOX -->
+        <div class="bg-amber-50 border border-amber-300 rounded-2xl p-3.5 space-y-2.5">
+          <div class="flex items-start gap-2">
+            <i data-lucide="shield-check" class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5"></i>
+            <div>
+              <h4 class="text-xs font-extrabold text-amber-950">Genuine Order Verification Token (₹20 / ₹50)</h4>
+              <p class="text-[11px] text-amber-900 leading-snug mt-0.5">
+                फर्जी ऑर्डर रोकने के लिए ₹20 या ₹50 टोकन पेमेंट करें। <strong>यह पूरी राशि आपके फाइनल दवा बिल में से कम (100% Adjusted) कर दी जाएगी।</strong>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-amber-200 p-2.5 flex items-center justify-between gap-2">
+            <!-- Custom SVG QR Badge -->
+            <div class="flex items-center gap-2.5">
+              <div class="w-12 h-12 rounded-lg bg-slate-900 text-white p-1.5 flex-shrink-0 flex items-center justify-center">
+                <svg viewBox="0 0 36 36" class="w-full h-full fill-current">
+                  <path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6zm18-4h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6zM2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2zm10-26h2v4h-2V2zm4 2h2v4h-2V4zm-4 6h4v2h-4v-2zm-2 4h6v2h-6v-2zm-12 2h4v2H2v-2zm6 0h4v4H8v-4zm6 2h4v2h-4v-2zm6-2h6v2h-6v-2zm8 0h4v4h-4v-4zm-14 6h2v6h-2v-6zm4 2h4v2h-4v-2zm6 0h4v6h-4v-6zm-8 6h6v2h-6v-2zm8 2h6v2h-6v-2z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="text-[10px] text-slate-500 font-semibold">UPI ID (PhonePe / GPay / Paytm)</p>
+                <div class="flex items-center gap-1.5">
+                  <span class="font-mono font-black text-xs text-slate-900">7870564801@upi</span>
+                  <button type="button" onclick="copyUpiId()" class="text-[10px] font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 px-1.5 py-0.5 rounded inline-flex items-center gap-0.5">
+                    <i data-lucide="copy" class="w-2.5 h-2.5"></i> Copy
+                  </button>
+                </div>
+                <p class="text-[10px] text-emerald-700 font-bold">Ajeet Kumar • Buxar Meds</p>
+              </div>
+            </div>
+
+            <a href="upi://pay?pa=7870564801@upi&pn=Buxar%20Meds&am=20&cu=INR" class="bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-[11px] px-3 py-2 rounded-xl shadow-sm whitespace-nowrap transition">
+              Pay ₹20 UPI
+            </a>
+          </div>
+
+          <input type="text" id="sym-utr" placeholder="Optional: Enter 12-digit UPI UTR / Ref No. (if paid)" class="w-full bg-white border border-amber-200 rounded-xl px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-amber-500">
+        </div>
+
+        <button onclick="submitSymptomOrder()" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-extrabold py-3.5 rounded-2xl text-xs sm:text-sm shadow-lg shadow-rose-600/25 flex items-center justify-center gap-2 transition">
+          <i data-lucide="send" class="w-4 h-4"></i>
+          <span>Submit Symptoms & Dispatch on WhatsApp</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 4: PIN SECURITY MODAL (RIDER PIN: 2026 | OWNER PIN: 1997)       -->
+  <!-- ===================================================================== -->
+  <div id="modal-pin" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white w-full max-w-xs rounded-3xl p-5 shadow-2xl space-y-4 slide-up">
+      <div class="text-center space-y-1">
+        <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="key-round" class="w-6 h-6 text-amber-400"></i>
+        </div>
+        <h3 id="pin-modal-title" class="text-base font-black text-slate-900">Security Verification</h3>
+        <p id="pin-modal-subtitle" class="text-xs text-slate-500">Enter 4-digit access PIN</p>
+      </div>
+
+      <div>
+        <input type="password" id="pin-code-input" maxlength="6" placeholder="••••" onkeydown="if(event.key==='Enter') verifyRolePin()" class="w-full text-center text-xl tracking-[0.4em] font-mono font-black bg-slate-100 border border-slate-300 rounded-2xl py-3 focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <p id="pin-error-msg" class="hidden text-center text-xs font-bold text-rose-600 mt-1.5">Incorrect PIN! Please try again.</p>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <button onclick="closePinModal()" class="py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold">Cancel</button>
+        <button onclick="verifyRolePin()" class="py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow">Unlock</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL 5: ADMIN ADD / EDIT BRANDED MEDICINE OR DEVICE                  -->
+  <!-- ===================================================================== -->
+  <div id="modal-admin-product" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
+    <div class="bg-white w-full max-w-md rounded-t-3xl sm:rounded-3xl p-5 shadow-2xl space-y-3.5 max-h-[92vh] overflow-y-auto slide-up">
+      <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+        <h3 id="admin-prod-modal-title" class="text-sm font-black text-slate-900">Add Branded Medicine / Device</h3>
+        <button onclick="closeAdminProductModal()" class="w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+      <input type="hidden" id="prod-form-id">
+
+      <div>
+        <label class="block text-[11px] font-bold text-slate-700 mb-1">Product Name *</label>
+        <input type="text" id="prod-form-name" placeholder="e.g. Dolo 650mg Tablet" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs">
+      </div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Manufacturer / Brand *</label>
+          <input type="text" id="prod-form-brand" placeholder="e.g. Micro Labs / Cipla" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Category *</label>
+          <select id="prod-form-category" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-2 text-xs font-medium">
+            <option value="Branded Medicines">Branded Medicines</option>
+            <option value="Medical Devices">Medical Devices</option>
+            <option value="Vitamins & Wellness">Vitamins & Wellness</option>
+            <option value="Baby & Mother Care">Baby & Mother Care</option>
+            <option value="First Aid & Surgicals">First Aid & Surgicals</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Pack Size *</label>
+          <input type="text" id="prod-form-pack" placeholder="e.g. Strip of 15 tablets" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs">
+        </div>
+        <div>
+          <label class="block text-[11px] font-bold text-slate-700 mb-1">Icon Style</label>
+          <select id="prod-form-icon" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-2.5 py-2 text-xs font-medium">
+            <option value="tablet">Tablets Strip</option>
+            <option value="capsule">Capsules</option>
+            <option value="syrup">Syrup / Gel Bottle</option>
+            <option value="bp">BP Monitor</option>
+            <option value="gluco">Glucometer</option>
+            <option value="thermo">Thermometer</option>
+            <option value="oximeter">Pulse Oximeter</option>
+            <option value="baby">Baby Care</option>
+            <option value="firstaid">First Aid Kit</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-[11px] font-bold text-slate-700 mb-1">Salt / Composition / Key Use *</label>
+        <input type="text" id="prod-form-salt" placeholder="e.g. Paracetamol IP 650mg • Fever & Pain Relief" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2 text-xs">
+      </div>
+
+      <div class="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-3 space-y-2">
+        <p class="text-[11px] font-extrabold text-emerald-950">Pricing & Owner Wholesale Margin</p>
+        <div class="grid grid-cols-3 gap-2">
+          <div>
+            <label class="block text-[10px] font-bold text-slate-600 mb-0.5">MRP (₹) *</label>
+            <input type="number" id="prod-form-mrp" oninput="previewAdminMargin()" placeholder="100" class="w-full bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs font-bold">
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-slate-600 mb-0.5">Discount %</label>
+            <input type="number" id="prod-form-discount" oninput="previewAdminMargin()" value="20" class="w-full bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs font-bold">
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-slate-600 mb-0.5">Chemist Cost (₹)</label>
+            <input type="number" id="prod-form-cost" oninput="previewAdminMargin()" placeholder="65" class="w-full bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs font-bold">
+          </div>
+        </div>
+        <div class="flex justify-between text-[11px] font-bold text-slate-700 pt-1 border-t border-emerald-200/80">
+          <span>Customer Price: <strong id="admin-preview-sale" class="text-emerald-700">₹0</strong></span>
+          <span>Net Profit: <strong id="admin-preview-profit" class="text-amber-700">₹0</strong></span>
+        </div>
+      </div>
+
+      <button onclick="saveAdminProduct()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 rounded-2xl text-xs shadow-md transition">
+        Save Product to Storefront
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 pointer-events-none flex flex-col items-center gap-2 w-full max-w-sm px-4"></div>
+
+  <script>
+    // =========================================================================
+    // 1. CONFIGURATION & CONSTANTS
+    // =========================================================================
+    const WHATSAPP_NUMBER = "917870564801";
+    const RIDER_PIN = "2026";
+    const OWNER_PIN = "1997";
+
+    const STORAGE_KEYS = {
+      PRODUCTS: "buxar_meds_v3_products",
+      ORDERS: "buxar_meds_v3_orders",
+      CART: "buxar_meds_v3_cart"
+    };
+
+    const ORDER_STEPS = [
+      "ऑर्डर प्राप्त हुआ (Order Received)",
+      "मेडिकल स्टोर से दवाई ली जा रही है (Pharmacy Sourced)",
+      "डिलीवरी पार्टनर निकल चुके हैं (Rider Assigned)",
+      "रास्ते में है — 15 मिनट में पहुँच रही है (Out for Delivery)",
+      "दवाई सुरक्षित डिलीवर हो गई (Delivered Safely)"
+    ];
+
+    const SYMPTOM_OPTIONS = [
+      "बुखार (Fever)",
+      "सिर दर्द (Headache)",
+      "पेट दर्द (Stomach Pain)",
+      "गैस/एसिडिटी (Gas/Acidity)",
+      "सर्दी-खांसी (Cold & Cough)",
+      "उल्टी/जी मिचलाना (Vomiting)",
+      "लूज मोशन (Loose Motion)",
+      "कमजोरी/चक्कर (Weakness)",
+      "चोट/घाव (Injury/Wound)",
+      "स्किन एलर्जी (Skin Allergy)"
+    ];
+
+    // 14 Realistic 100% Genuine Branded Items (Categorized by Hindi + English needs)
+    const INITIAL_BRANDED_PRODUCTS = [
+      {
+        id: "bm-1",
+        name: "Dolo 650mg Tablet",
+        brand: "Micro Labs Ltd",
+        category: "Fever & Pain",
+        pack: "15 गोलियों की पट्टी (Strip of 15)",
+        salt: "Paracetamol IP 650mg • तेज बुखार और शरीर दर्द",
+        mrp: 35,
+        discountPercent: 20,
+        costPrice: 24,
+        iconType: "tablet",
+        inStock: true
+      },
+      {
+        id: "bm-2",
+        name: "Pan-D Capsule",
+        brand: "Alkem Laboratories",
+        category: "Gastric",
+        pack: "15 कैप्सूल की पट्टी (Strip of 15)",
+        salt: "Pantoprazole 40mg + Domperidone • गैस और एसिडिटी",
+        mrp: 220,
+        discountPercent: 20,
+        costPrice: 155,
+        iconType: "capsule",
+        inStock: true
+      },
+      {
+        id: "bm-3",
+        name: "Augmentin 625 Duo Tablet",
+        brand: "GSK Pharmaceuticals",
+        category: "Cold & Cough",
+        pack: "10 गोलियों की पट्टी (Strip of 10)",
+        salt: "Amoxycillin 500mg + Clavulanic Acid • गला दर्द व संक्रमण",
+        mrp: 223,
+        discountPercent: 20,
+        costPrice: 162,
+        iconType: "tablet",
+        inStock: true
+      },
+      {
+        id: "bm-4",
+        name: "Azithral 500 Tablet",
+        brand: "Alembic Pharmaceuticals",
+        category: "Cold & Cough",
+        pack: "5 गोलियों की पट्टी (Strip of 5)",
+        salt: "Azithromycin IP 500mg • खांसी व गले की खराश",
+        mrp: 132,
+        discountPercent: 20,
+        costPrice: 94,
+        iconType: "tablet",
+        inStock: true
+      },
+      {
+        id: "bm-5",
+        name: "Shelcal 500 Tablet",
+        brand: "Torrent Pharma",
+        category: "Fever & Pain",
+        pack: "15 गोलियों की पट्टी (Strip of 15)",
+        salt: "Calcium 500mg + Vitamin D3 • हड्डियों और कमजोरी के लिए",
+        mrp: 145,
+        discountPercent: 20,
+        costPrice: 102,
+        iconType: "tablet",
+        inStock: true
+      },
+      {
+        id: "bm-6",
+        name: "Digene Acidity & Gas Gel (Mint)",
+        brand: "Abbott India",
+        category: "Gastric",
+        pack: "200ml बोतल (Bottle of 200ml)",
+        salt: "Magnesium Hydroxide + Simethicone • पेट की जलन व गैस",
+        mrp: 165,
+        discountPercent: 20,
+        costPrice: 118,
+        iconType: "syrup",
+        inStock: true
+      },
+      {
+        id: "bm-7",
+        name: "Crocin Advance 500mg Tablet",
+        brand: "Haleon / GSK",
+        category: "Fever & Pain",
+        pack: "20 गोलियों की पट्टी (Strip of 20)",
+        salt: "Paracetamol 500mg Optizorb • सिर दर्द और बुखार",
+        mrp: 42,
+        discountPercent: 20,
+        costPrice: 29,
+        iconType: "tablet",
+        inStock: true
+      },
+      {
+        id: "bm-8",
+        name: "Benadryl Cough Formula Syrup",
+        brand: "Johnson & Johnson",
+        category: "Cold & Cough",
+        pack: "150ml सिरप बोतल",
+        salt: "Diphenhydramine + Ammonium Chloride • सूखी व गीली खांसी",
+        mrp: 135,
+        discountPercent: 20,
+        costPrice: 96,
+        iconType: "syrup",
+        inStock: true
+      },
+      {
+        id: "bm-9",
+        name: "Omron HEM-7120 Automatic BP Monitor",
+        brand: "Omron Healthcare",
+        category: "Medical Devices",
+        pack: "1 मशीन + कफ (1 Year Warranty)",
+        salt: "डिजिटल ब्लड प्रेशर (BP) जांचने की मशीन",
+        mrp: 2150,
+        discountPercent: 20,
+        costPrice: 1420,
+        iconType: "bp",
+        inStock: true
+      },
+      {
+        id: "bm-10",
+        name: "Dr. Morepen Gluco One BG-03 Glucometer",
+        brand: "Dr. Morepen",
+        category: "Medical Devices",
+        pack: "मशीन + 25 फ्री स्ट्रिप्स किट",
+        salt: "घर बैठे शुगर (Blood Sugar) जांचने की मशीन",
+        mrp: 1290,
+        discountPercent: 20,
+        costPrice: 780,
+        iconType: "gluco",
+        inStock: true
+      },
+      {
+        id: "bm-11",
+        name: "Dr. Trust Digital Thermometer",
+        brand: "Dr. Trust USA",
+        category: "Medical Devices",
+        pack: "1 वाटरप्रूफ थर्मामीटर",
+        salt: "10 सेकंड में बुखार नापने वाला डिजिटल थर्मामीटर",
+        mrp: 300,
+        discountPercent: 20,
+        costPrice: 165,
+        iconType: "thermo",
+        inStock: true
+      },
+      {
+        id: "bm-12",
+        name: "Dr. Morepen Pulse Oximeter",
+        brand: "Dr. Morepen",
+        category: "Medical Devices",
+        pack: "1 पल्स ऑक्सीमीटर",
+        salt: "ऑक्सीजन लेवल (SpO2) और पल्स रेट नापने की मशीन",
+        mrp: 1400,
+        discountPercent: 20,
+        costPrice: 790,
+        iconType: "oximeter",
+        inStock: true
+      },
+      {
+        id: "bm-13",
+        name: "Pampers Active Baby Diapers (Medium)",
+        brand: "Pampers / P&G",
+        category: "Mother & Baby",
+        pack: "20 पैंट्स का पैक (Pack of 20)",
+        salt: "छोटे बच्चों के लिए 12-घंटे सूखापन देने वाले डायपर",
+        mrp: 399,
+        discountPercent: 20,
+        costPrice: 285,
+        iconType: "baby",
+        inStock: true
+      },
+      {
+        id: "bm-14",
+        name: "Dettol Antiseptic First Aid Kit",
+        brand: "Reckitt / Dettol",
+        category: "First Aid",
+        pack: "कम्प्लीट इमरजेंसी बॉक्स",
+        salt: "डेटॉल लिक्विड, पट्टी, रुई और बैंडेज का पूरा सेट",
+        mrp: 350,
+        discountPercent: 20,
+        costPrice: 235,
+        iconType: "firstaid",
+        inStock: true
+      }
+    ];
+
+    const INITIAL_SAMPLE_ORDERS = [
+      {
+        id: "BXR-8492",
+        type: "Branded Medicine Order",
+        customerName: "Rakesh Kumar Singh",
+        phone: "9835412098",
+        address: "Near Jyoti Prakash Chowk, Station Road, Buxar",
+        createdAt: "12 mins ago",
+        statusStep: 3, // Out for Express Delivery
+        items: [
+          { name: "Dolo 650mg Tablet", qty: 2, price: 28, cost: 24 },
+          { name: "Pan-D Capsule", qty: 1, price: 176, cost: 155 }
+        ],
+        mrpTotal: 290,
+        discountTotal: 58,
+        deliveryFee: 30,
+        grandTotal: 262,
+        estimatedProfit: 59,
+        notes: "Urgent fever medicine"
+      }
+    ];
+
+    // =========================================================================
+    // 2. APPLICATION STATE
+    // =========================================================================
+    let products = [];
+    let orders = [];
+    let cart = {}; // { productId: qty }
+    let selectedCategory = "all";
+    let searchQuery = "";
+    let activeRole = "customer";
+    let unlockedRoles = { rider: false, owner: false };
+    let pendingPinRole = null;
+    let riderOnline = true;
+    let adminSubTab = "orders";
+    let selectedSymptoms = [];
+    let trackedOrderId = null;
+
+    // =========================================================================
+    // 3. INITIALIZATION & STORAGE HELPERS
+    // =========================================================================
+    function loadState() {
+      try {
+        const savedProducts = localStorage.getItem(STORAGE_KEYS.PRODUCTS);
+        products = savedProducts ? JSON.parse(savedProducts) : [...INITIAL_BRANDED_PRODUCTS];
+
+        const savedOrders = localStorage.getItem(STORAGE_KEYS.ORDERS);
+        orders = savedOrders ? JSON.parse(savedOrders) : [...INITIAL_SAMPLE_ORDERS];
+
+        const savedCart = localStorage.getItem(STORAGE_KEYS.CART);
+        cart = savedCart ? JSON.parse(savedCart) : {};
+      } catch (err) {
+        products = [...INITIAL_BRANDED_PRODUCTS];
+        orders = [...INITIAL_SAMPLE_ORDERS];
+        cart = {};
+      }
+
+      if (orders.length > 0) {
+        trackedOrderId = orders[0].id;
+      }
+    }
+
+    function saveProducts() {
+      localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
+    }
+
+    function saveOrders() {
+      localStorage.setItem(STORAGE_KEYS.ORDERS, JSON.stringify(orders));
+    }
+
+    function saveCart() {
+      localStorage.setItem(STORAGE_KEYS.CART, JSON.stringify(cart));
+    }
+
+    function resetDemoData() {
+      products = [...INITIAL_BRANDED_PRODUCTS];
+      orders = [...INITIAL_SAMPLE_ORDERS];
+      cart = {};
+      saveProducts();
+      saveOrders();
+      saveCart();
+      renderAll();
+      showToast("Demo data restored to defaults!", "success");
+    }
+
+    // =========================================================================
+    // 4. CUSTOM SVG PRODUCT THUMBNAIL ILLUSTRATIONS
+    // =========================================================================
+    function getProductSvgIllustration(type) {
+      const svgs = {
+        tablet: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="12" y="8" width="40" height="48" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="2.5"/>
+          <circle cx="24" cy="20" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+          <circle cx="40" cy="20" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+          <circle cx="24" cy="32" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+          <circle cx="40" cy="32" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+          <circle cx="24" cy="44" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+          <circle cx="40" cy="44" r="4.5" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+        </svg>`,
+        capsule: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <g transform="rotate(-35 32 32)">
+            <rect x="14" y="22" width="36" height="20" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="2.5"/>
+            <path d="M32 22h8a10 10 0 0 1 0 20h-8V22z" fill="#0d9488"/>
+          </g>
+        </svg>`,
+        syrup: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="25" y="8" width="14" height="7" rx="2" fill="#059669"/>
+          <path d="M21 19h22l3 8v25a4 4 0 0 1-4 4H22a4 4 0 0 1-4-4V27l3-8z" fill="#ccfbf1" stroke="#0d9488" stroke-width="2.5"/>
+          <rect x="22" y="30" width="20" height="14" rx="2" fill="#ffffff"/>
+          <path d="M32 33v8M28 37h8" stroke="#059669" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>`,
+        bp: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="14" y="12" width="36" height="40" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
+          <rect x="20" y="18" width="24" height="16" rx="3" fill="#064e3b"/>
+          <text x="32" y="29" text-anchor="middle" fill="#34d399" font-size="8" font-family="monospace" font-weight="bold">120/80</text>
+          <circle cx="25" cy="43" r="3" fill="#059669"/>
+          <circle cx="39" cy="43" r="3" fill="#f59e0b"/>
+        </svg>`,
+        gluco: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="20" y="10" width="24" height="38" rx="7" fill="#f0fdfa" stroke="#0d9488" stroke-width="2.5"/>
+          <rect x="24" y="16" width="16" height="14" rx="2" fill="#0f766e"/>
+          <text x="32" y="26" text-anchor="middle" fill="#ffffff" font-size="8" font-family="monospace" font-weight="bold">98</text>
+          <rect x="29" y="48" width="6" height="8" fill="#f59e0b"/>
+        </svg>`,
+        thermo: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <g transform="rotate(35 32 32)">
+            <rect x="27" y="8" width="10" height="48" rx="5" fill="#ecfdf5" stroke="#059669" stroke-width="2.5"/>
+            <rect x="29.5" y="16" width="5" height="14" rx="1" fill="#064e3b"/>
+            <circle cx="32" cy="48" r="2.5" fill="#ef4444"/>
+          </g>
+        </svg>`,
+        oximeter: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="16" y="16" width="32" height="32" rx="9" fill="#0f172a" stroke="#059669" stroke-width="2.5"/>
+          <rect x="21" y="21" width="22" height="16" rx="3" fill="#064e3b"/>
+          <text x="32" y="32" text-anchor="middle" fill="#34d399" font-size="8" font-family="monospace" font-weight="bold">99%</text>
+        </svg>`,
+        baby: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <circle cx="32" cy="32" r="20" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+          <circle cx="26" cy="29" r="2" fill="#78350f"/>
+          <circle cx="38" cy="29" r="2" fill="#78350f"/>
+          <path d="M26 37c2 3 10 3 12 0" stroke="#78350f" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+        </svg>`,
+        firstaid: `<svg viewBox="0 0 64 64" class="w-12 h-12">
+          <rect x="10" y="18" width="44" height="34" rx="7" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.5"/>
+          <path d="M24 18v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" stroke="#e11d48" stroke-width="2.5" fill="none"/>
+          <path d="M32 27v16M24 35h16" stroke="#e11d48" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>`
+      };
+      return svgs[type] || svgs.tablet;
+    }
+
+    function getDiscountedPrice(product) {
+      const disc = product.discountPercent || 20;
+      return Math.round(product.mrp - (product.mrp * disc / 100));
+    }
+
+    // =========================================================================
+    // 5. CUSTOMER STOREFRONT RENDERING & FILTERING
+    // =========================================================================
+    function renderProductGrid() {
+      const grid = document.getElementById("product-grid");
+      const emptyState = document.getElementById("empty-search-state");
+      const countLabel = document.getElementById("catalog-count-label");
+
+      const filtered = products.filter(p => {
+        const matchesCat = selectedCategory === "all" || p.category === selectedCategory;
+        const q = searchQuery.toLowerCase();
+        const matchesQuery = !q || 
+          p.name.toLowerCase().includes(q) || 
+          p.brand.toLowerCase().includes(q) || 
+          p.salt.toLowerCase().includes(q) ||
+          p.category.toLowerCase().includes(q);
+        return matchesCat && matchesQuery;
+      });
+
+      countLabel.textContent = `${filtered.length} ब्रांडेड दवाइयाँ`;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        emptyState.classList.remove("hidden");
+        lucide.createIcons();
+        return;
+      }
+
+      emptyState.classList.add("hidden");
+
+      grid.innerHTML = filtered.map(product => {
+        const salePrice = getDiscountedPrice(product);
+        const qty = cart[product.id] || 0;
+        const outOfStock = product.inStock === false;
+
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200/90 hover:border-emerald-400 p-3 shadow-xs hover:shadow-md transition flex flex-col justify-between relative ${outOfStock ? 'opacity-65' : ''}">
+            <div>
+              <!-- Top Badges -->
+              <div class="flex items-center justify-between gap-1 mb-2">
+                <span class="text-[9px] font-extrabold uppercase tracking-wide bg-emerald-50 text-emerald-800 border border-emerald-200 px-1.5 py-0.5 rounded-md truncate">
+                  100% असली ब्रांडेड
+                </span>
+                <span class="text-[9px] font-black bg-amber-400 text-slate-950 px-1.5 py-0.5 rounded-md flex-shrink-0">
+                  ${product.discountPercent}% छूट
+                </span>
+              </div>
+
+              <!-- SVG Medical Illustration Thumbnail -->
+              <div class="w-full h-24 rounded-xl bg-gradient-to-b from-slate-50 to-emerald-50/40 border border-slate-100 flex items-center justify-center mb-2.5 relative">
+                ${getProductSvgIllustration(product.iconType)}
+                <span class="absolute bottom-1.5 left-1.5 text-[9px] font-bold text-slate-600 bg-white/90 px-1.5 py-0.5 rounded border border-slate-200/70 truncate max-w-[90%]">
+                  ${product.brand}
+                </span>
+              </div>
+
+              <!-- Title, Pack Size & Salt -->
+              <h4 class="text-xs sm:text-[13px] font-extrabold text-slate-900 leading-snug line-clamp-2">${product.name}</h4>
+              <p class="text-[10px] font-semibold text-teal-700 mt-0.5">${product.pack}</p>
+              <p class="text-[10px] text-slate-500 line-clamp-1 mt-0.5">${product.salt}</p>
+            </div>
+
+            <!-- Price & Blinkit Stepper -->
+            <div class="pt-2.5 mt-2.5 border-t border-slate-100 flex items-center justify-between gap-1">
+              <div>
+                <div class="flex items-baseline gap-1.5">
+                  <span class="text-sm font-black text-slate-900">₹${salePrice}</span>
+                  <span class="text-[10px] text-slate-400 line-through font-medium">₹${product.mrp}</span>
+                </div>
+                <span class="text-[9px] font-bold text-emerald-700">बचत ₹${product.mrp - salePrice}</span>
+              </div>
+
+              <div>
+                ${outOfStock ? `
+                  <span class="text-[10px] font-bold text-rose-600 bg-rose-50 px-2 py-1 rounded-lg border border-rose-200">स्टॉक खत्म</span>
+                ` : qty === 0 ? `
+                  <button onclick="updateCartQty('${product.id}', 1)" class="bg-emerald-50 hover:bg-emerald-600 text-emerald-700 hover:text-white border border-emerald-600 font-extrabold text-xs px-3 py-1.5 rounded-xl transition active:scale-95">
+                    + जोड़ें
+                  </button>
+                ` : `
+                  <div class="flex items-center bg-emerald-600 text-white rounded-xl shadow-xs overflow-hidden">
+                    <button onclick="updateCartQty('${product.id}', -1)" class="px-2 py-1.5 hover:bg-emerald-700 font-black text-xs">-</button>
+                    <span class="px-2 text-xs font-extrabold">${qty}</span>
+                    <button onclick="updateCartQty('${product.id}', 1)" class="px-2 py-1.5 hover:bg-emerald-700 font-black text-xs">+</button>
+                  </div>
+                `}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function selectCategory(cat) {
+      selectedCategory = cat;
+      document.querySelectorAll(".cat-filter-btn").forEach(btn => {
+        btn.classList.remove("bg-emerald-600", "text-white", "shadow-sm");
+        btn.classList.add("bg-white", "text-slate-700", "border", "border-slate-200");
+      });
+      const activeBtn = document.getElementById(`cat-btn-${cat}`);
+      if (activeBtn) {
+        activeBtn.classList.remove("bg-white", "text-slate-700", "border", "border-slate-200");
+        activeBtn.classList.add("bg-emerald-600", "text-white", "shadow-sm");
+      }
+      renderProductGrid();
+    }
+
+    function handleSearch() {
+      const input = document.getElementById("smart-search-input");
+      searchQuery = input.value.trim();
+      const clearBtn = document.getElementById("clear-search-btn");
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove("hidden");
+      } else {
+        clearBtn.classList.add("hidden");
+      }
+      renderProductGrid();
+    }
+
+    function clearSearch() {
+      document.getElementById("smart-search-input").value = "";
+      searchQuery = "";
+      document.getElementById("clear-search-btn").classList.add("hidden");
+      renderProductGrid();
+    }
+
+    // =========================================================================
+    // 6. CART & CHECKOUT LOGIC
+    // =========================================================================
+    function updateCartQty(productId, delta) {
+      const current = cart[productId] || 0;
+      const next = current + delta;
+      if (next <= 0) {
+        delete cart[productId];
+      } else {
+        cart[productId] = next;
+      }
+      saveCart();
+      renderProductGrid();
+      updateStickyCartBar();
+      if (!document.getElementById("modal-cart").classList.contains("hidden")) {
+        renderCartDrawer();
+      }
+    }
+
+    function calculateCartTotals() {
+      let itemCount = 0;
+      let mrpTotal = 0;
+      let saleTotal = 0;
+      let costTotal = 0;
+
+      Object.entries(cart).forEach(([id, qty]) => {
+        const prod = products.find(p => p.id === id);
+        if (prod) {
+          const salePrice = getDiscountedPrice(prod);
+          itemCount += qty;
+          mrpTotal += prod.mrp * qty;
+          saleTotal += salePrice * qty;
+          costTotal += (prod.costPrice || Math.round(salePrice * 0.7)) * qty;
+        }
+      });
+
+      const discountTotal = mrpTotal - saleTotal;
+      const deliveryFee = saleTotal === 0 ? 0 : (saleTotal >= 299 ? 0 : 30);
+      const grandTotal = saleTotal + deliveryFee;
+      const estimatedProfit = Math.max(0, (saleTotal - costTotal) + (deliveryFee > 0 ? 10 : 0));
+
+      return { itemCount, mrpTotal, saleTotal, discountTotal, deliveryFee, grandTotal, estimatedProfit };
+    }
+
+    function updateStickyCartBar() {
+      const bar = document.getElementById("sticky-cart-bar");
+      const totals = calculateCartTotals();
+
+      if (totals.itemCount === 0 || activeRole !== "customer") {
+        bar.classList.add("hidden");
+        return;
+      }
+
+      bar.classList.remove("hidden");
+      document.getElementById("bar-item-count").textContent = `${totals.itemCount} दवाई`;
+      document.getElementById("bar-total-price").textContent = `₹${totals.grandTotal}`;
+      document.getElementById("bar-savings-amount").textContent = `₹${totals.discountTotal}`;
+    }
+
+    function openCartDrawer() {
+      renderCartDrawer();
+      document.getElementById("modal-cart").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeCartDrawer() {
+      document.getElementById("modal-cart").classList.add("hidden");
+    }
+
+    function renderCartDrawer() {
+      const container = document.getElementById("cart-drawer-items");
+      const entries = Object.entries(cart);
+
+      if (entries.length === 0) {
+        container.innerHTML = `<p class="text-xs text-slate-500 text-center py-6">Your cart is empty. Add branded medicines from the store.</p>`;
+      } else {
+        container.innerHTML = entries.map(([id, qty]) => {
+          const prod = products.find(p => p.id === id);
+          if (!prod) return "";
+          const salePrice = getDiscountedPrice(prod);
+          return `
+            <div class="flex items-center justify-between gap-2 bg-slate-50 border border-slate-200/80 rounded-2xl p-2.5">
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-extrabold text-slate-900 truncate">${prod.name}</p>
+                <p class="text-[10px] text-slate-500">${prod.brand} • ₹${salePrice} x ${qty}</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-black text-slate-900">₹${salePrice * qty}</span>
+                <div class="flex items-center bg-emerald-600 text-white rounded-lg overflow-hidden">
+                  <button onclick="updateCartQty('${prod.id}', -1)" class="px-2 py-1 text-xs font-black">-</button>
+                  <span class="px-1.5 text-xs font-bold">${qty}</span>
+                  <button onclick="updateCartQty('${prod.id}', 1)" class="px-2 py-1 text-xs font-black">+</button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+
+      const totals = calculateCartTotals();
+      document.getElementById("checkout-mrp").textContent = `₹${totals.mrpTotal}`;
+      document.getElementById("checkout-discount").textContent = `-₹${totals.discountTotal}`;
+      document.getElementById("checkout-delivery").textContent = totals.deliveryFee === 0 ? "FREE" : `₹${totals.deliveryFee}`;
+      document.getElementById("checkout-grand-total").textContent = `₹${totals.grandTotal}`;
+    }
+
+    function captureGPSLocation(targetInputId, statusTextId) {
+      const statusEl = document.getElementById(statusTextId);
+      const targetInput = document.getElementById(targetInputId);
+      statusEl.classList.remove("hidden");
+      statusEl.textContent = "Fetching GPS coordinates in Buxar...";
+
+      if (!navigator.geolocation) {
+        statusEl.textContent = "GPS not supported on this browser. Please type Buxar landmark.";
+        return;
+      }
+
+      navigator.geolocation.getCurrentPosition(
+        (pos) => {
+          const lat = pos.coords.latitude.toFixed(5);
+          const lng = pos.coords.longitude.toFixed(5);
+          const mapsUrl = `https://maps.google.com/?q=${lat},${lng}`;
+          const existing = targetInput.value.trim();
+          targetInput.value = existing ? `${existing} (GPS: ${mapsUrl})` : `Buxar GPS Pin: ${mapsUrl}`;
+          statusEl.textContent = `GPS Location Attached ✓ (${lat}, ${lng})`;
+        },
+        () => {
+          statusEl.textContent = "Location permission denied. Please enter your Buxar street/landmark manually.";
+        },
+        { timeout: 8000 }
+      );
+    }
+
+    function submitCartOrder() {
+      const totals = calculateCartTotals();
+      if (totals.itemCount === 0) {
+        showToast("Please add at least one item to cart.", "error");
+        return;
+      }
+
+      const name = document.getElementById("cust-name").value.trim();
+      const phone = document.getElementById("cust-phone").value.trim();
+      const address = document.getElementById("cust-address").value.trim();
+
+      if (!name || !phone || !address) {
+        showToast("Please enter Name, Mobile Number & Buxar Address.", "error");
+        return;
+      }
+
+      const orderId = "BXR-" + Math.floor(1000 + Math.random() * 9000);
+      const orderItems = Object.entries(cart).map(([id, qty]) => {
+        const prod = products.find(p => p.id === id);
+        return {
+          name: prod.name,
+          brand: prod.brand,
+          qty,
+          price: getDiscountedPrice(prod),
+          cost: prod.costPrice || 0
+        };
+      });
+
+      const newOrder = {
+        id: orderId,
+        type: "Branded Medicine Order",
+        customerName: name,
+        phone,
+        address,
+        createdAt: "Just now",
+        statusStep: 0,
+        items: orderItems,
+        mrpTotal: totals.mrpTotal,
+        discountTotal: totals.discountTotal,
+        deliveryFee: totals.deliveryFee,
+        grandTotal: totals.grandTotal,
+        estimatedProfit: totals.estimatedProfit,
+        notes: "Express 15-25 min delivery"
+      };
+
+      orders.unshift(newOrder);
+      saveOrders();
+
+      // Clear cart
+      cart = {};
+      saveCart();
+      renderProductGrid();
+      updateStickyCartBar();
+      closeCartDrawer();
+
+      // Switch immediately to Live Order Tracker
+      trackedOrderId = orderId;
+      switchRole("tracker");
+      showToast(`Order ${orderId} Confirmed! Opening WhatsApp...`, "success");
+
+      // Dispatch WhatsApp message
+      const itemLines = orderItems.map((it, idx) => `${idx + 1}. ${it.name} (${it.brand}) x ${it.qty} = ₹${it.price * it.qty}`).join("\n");
+      const waText = `🏥 *NEW EXPRESS ORDER - BUXAR MEDS 24x7*\n` +
+        `🆔 *Order ID:* ${orderId}\n` +
+        `👤 *Customer:* ${name}\n` +
+        `📞 *Phone:* ${phone}\n` +
+        `📍 *Buxar Address:* ${address}\n` +
+        `-------------------------\n` +
+        `💊 *Branded Items (20% OFF):*\n${itemLines}\n` +
+        `-------------------------\n` +
+        `🚚 *Delivery Fee:* ${totals.deliveryFee === 0 ? 'FREE' : '₹' + totals.deliveryFee}\n` +
+        `💰 *Grand Total Payable:* ₹${totals.grandTotal}\n` +
+        `⚡ _Track Live in Buxar Meds App_`;
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`, "_blank");
+      }, 450);
+    }
+
+    // =========================================================================
+    // 7. PRESCRIPTION ORDER LOGIC
+    // =========================================================================
+    function openPrescriptionModal() {
+      document.getElementById("modal-prescription").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closePrescriptionModal() {
+      document.getElementById("modal-prescription").classList.add("hidden");
+    }
+
+    function previewPrescriptionFile(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        document.getElementById("rx-preview-image").src = e.target.result;
+        document.getElementById("rx-upload-placeholder").classList.add("hidden");
+        document.getElementById("rx-preview-box").classList.remove("hidden");
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function submitPrescriptionOrder() {
+      const name = document.getElementById("rx-name").value.trim();
+      const phone = document.getElementById("rx-phone").value.trim();
+      const address = document.getElementById("rx-address").value.trim();
+      const notes = document.getElementById("rx-notes").value.trim();
+
+      if (!name || !phone || !address) {
+        showToast("Please enter Name, Phone & Buxar Address.", "error");
+        return;
+      }
+
+      const orderId = "RX-" + Math.floor(1000 + Math.random() * 9000);
+      const newOrder = {
+        id: orderId,
+        type: "Prescription Upload Order",
+        customerName: name,
+        phone,
+        address,
+        createdAt: "Just now",
+        statusStep: 0,
+        items: [{ name: "Doctor Prescription Slip", brand: "Verified Chemist Bill", qty: 1, price: 0, cost: 0 }],
+        mrpTotal: 0,
+        discountTotal: 0,
+        deliveryFee: 0,
+        grandTotal: "Bill on Pickup (20% Off)",
+        estimatedProfit: 45,
+        notes: notes || "Prescription photo attached via WhatsApp"
+      };
+
+      orders.unshift(newOrder);
+      saveOrders();
+      closePrescriptionModal();
+
+      trackedOrderId = orderId;
+      switchRole("tracker");
+      showToast(`Prescription Order ${orderId} Created!`, "success");
+
+      const waText = `📄 *PRESCRIPTION ORDER - BUXAR MEDS 24x7*\n` +
+        `🆔 *Order ID:* ${orderId}\n` +
+        `👤 *Patient Name:* ${name}\n` +
+        `📞 *Phone:* ${phone}\n` +
+        `📍 *Buxar Address:* ${address}\n` +
+        `📝 *Medicine Notes:* ${notes || 'See attached prescription photo'}\n` +
+        `📷 _I am attaching my doctor's prescription photo right now._`;
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`, "_blank");
+      }, 450);
+    }
+
+    // =========================================================================
+    // 8. SYMPTOM CONSULTATION (परेशानी बताएं) & TOKEN VERIFICATION
+    // =========================================================================
+    function renderSymptomChips() {
+      const container = document.getElementById("symptom-chips-container");
+      container.innerHTML = SYMPTOM_OPTIONS.map(sym => {
+        const active = selectedSymptoms.includes(sym);
+        return `
+          <button type="button" onclick="toggleSymptom('${sym}')" class="px-2.5 py-1.5 rounded-xl text-[11px] font-bold border transition ${
+            active 
+              ? 'bg-rose-600 text-white border-rose-600 shadow-xs' 
+              : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-rose-300'
+          }">
+            ${sym}
+          </button>
+        `;
+      }).join("");
+    }
+
+    function toggleSymptom(sym) {
+      if (selectedSymptoms.includes(sym)) {
+        selectedSymptoms = selectedSymptoms.filter(s => s !== sym);
+      } else {
+        selectedSymptoms.push(sym);
+      }
+      renderSymptomChips();
+    }
+
+    function openSymptomModal() {
+      renderSymptomChips();
+      document.getElementById("modal-symptom").classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeSymptomModal() {
+      document.getElementById("modal-symptom").classList.add("hidden");
+    }
+
+    function copyUpiId() {
+      const tempInput = document.createElement("input");
+      tempInput.value = "7870564801@upi";
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+      showToast("UPI ID 7870564801@upi Copied!", "success");
+    }
+
+    function submitSymptomOrder() {
+      const name = document.getElementById("sym-name").value.trim();
+      const age = document.getElementById("sym-age").value.trim();
+      const gender = document.getElementById("sym-gender").value;
+      const duration = document.getElementById("sym-duration").value;
+      const details = document.getElementById("sym-details").value.trim();
+      const history = document.getElementById("sym-history").value.trim() || "None";
+      const phone = document.getElementById("sym-phone").value.trim();
+      const address = document.getElementById("sym-address").value.trim();
+      const utr = document.getElementById("sym-utr").value.trim();
+
+      if (!name || !age || !phone || !address) {
+        showToast("Please fill Patient Name, Age, Phone & Buxar Address.", "error");
+        return;
+      }
+
+      if (selectedSymptoms.length === 0 && !details) {
+        showToast("Please select at least one symptom or describe your problem.", "error");
+        return;
+      }
+
+      const orderId = "SYM-" + Math.floor(1000 + Math.random() * 9000);
+      const symptomsText = selectedSymptoms.length > 0 ? selectedSymptoms.join(", ") : "Custom Symptom";
+
+      const newOrder = {
+        id: orderId,
+        type: "Symptom Consultation Order",
+        customerName: `${name} (${age}y, ${gender})`,
+        phone,
+        address,
+        createdAt: "Just now",
+        statusStep: 0,
+        items: [
+          { name: `Symptoms: ${symptomsText}`, brand: `Duration: ${duration}`, qty: 1, price: 0, cost: 0 }
+        ],
+        mrpTotal: 0,
+        discountTotal: 0,
+        deliveryFee: 0,
+        grandTotal: "Chemist Bill - Token Adjusted",
+        estimatedProfit: 50,
+        notes: `Details: ${details || 'N/A'} | History/Allergy: ${history} | Token UTR: ${utr || 'Pending on WhatsApp'}`
+      };
+
+      orders.unshift(newOrder);
+      saveOrders();
+      closeSymptomModal();
+
+      trackedOrderId = orderId;
+      switchRole("tracker");
+      showToast(`Symptom Request ${orderId} Registered!`, "success");
+
+      const waText = `🩺 *SYMPTOM CONSULTATION ORDER - BUXAR MEDS 24x7*\n` +
+        `🆔 *Order ID:* ${orderId}\n` +
+        `👤 *Patient:* ${name} (${age} Years | ${gender})\n` +
+        `⏳ *Duration (कितने दिन से):* ${duration}\n` +
+        `🤒 *Symptoms (लक्षण):* ${symptomsText}\n` +
+        `📝 *Problem Details:* ${details || 'Not specified'}\n` +
+        `⚠️ *Medical History / Allergies:* ${history}\n` +
+        `📞 *Mobile:* ${phone}\n` +
+        `📍 *Buxar Address:* ${address}\n` +
+        `💳 *Verification Token (₹20/₹50):* ${utr ? 'UTR ' + utr : 'Will share screenshot on WhatsApp'}\n` +
+        `_(Token amount will be 100% adjusted in final medicine bill)_`;
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`, "_blank");
+      }, 450);
+    }
+
+    // =========================================================================
+    // 9. ROLE SWITCHING & PIN SECURITY (RIDER: 2026 | OWNER: 1997)
+    // =========================================================================
+    function switchRole(role) {
+      activeRole = role;
+
+      // Update header pills
+      document.querySelectorAll(".role-pill").forEach(btn => {
+        btn.classList.remove("bg-emerald-600", "text-white", "shadow-sm");
+        btn.classList.add("bg-slate-100", "text-slate-700");
+      });
+      const activePill = document.getElementById(`nav-${role}`);
+      if (activePill) {
+        activePill.classList.remove("bg-slate-100", "text-slate-700");
+        activePill.classList.add("bg-emerald-600", "text-white", "shadow-sm");
+      }
+
+      // Toggle Views
+      document.getElementById("view-customer").classList.toggle("hidden", role !== "customer");
+      document.getElementById("view-tracker").classList.toggle("hidden", role !== "tracker");
+      document.getElementById("view-rider").classList.toggle("hidden", role !== "rider");
+      document.getElementById("view-owner").classList.toggle("hidden", role !== "owner");
+
+      // Show search bar only in Customer mode
+      document.getElementById("header-search-bar").classList.toggle("hidden", role !== "customer");
+
+      updateStickyCartBar();
+
+      if (role === "tracker") renderLiveOrderTracker();
+      if (role === "rider") renderRiderDashboard();
+      if (role === "owner") renderOwnerDashboard();
+
+      lucide.createIcons();
+    }
+
+    function requestRoleAccess(role) {
+      if (unlockedRoles[role]) {
+        switchRole(role);
+        return;
+      }
+
+      pendingPinRole = role;
+      document.getElementById("pin-code-input").value = "";
+      document.getElementById("pin-error-msg").classList.add("hidden");
+
+      if (role === "rider") {
+        document.getElementById("pin-modal-title").textContent = "Delivery Partner Login";
+        document.getElementById("pin-modal-subtitle").textContent = "Enter Rider Access PIN (Default: 2026)";
+      } else {
+        document.getElementById("pin-modal-title").textContent = "Owner Admin Login";
+        document.getElementById("pin-modal-subtitle").textContent = "Enter Store Owner PIN (Default: 1997)";
+      }
+
+      document.getElementById("modal-pin").classList.remove("hidden");
+      setTimeout(() => document.getElementById("pin-code-input").focus(), 100);
+      lucide.createIcons();
+    }
+
+    function closePinModal() {
+      document.getElementById("modal-pin").classList.add("hidden");
+      pendingPinRole = null;
+    }
+
+    function verifyRolePin() {
+      const entered = document.getElementById("pin-code-input").value.trim();
+      const expected = pendingPinRole === "rider" ? RIDER_PIN : OWNER_PIN;
+
+      if (entered === expected) {
+        unlockedRoles[pendingPinRole] = true;
+        const target = pendingPinRole;
+        closePinModal();
+        switchRole(target);
+        showToast(`${target === 'rider' ? 'Delivery Partner' : 'Owner Admin'} Mode Unlocked!`, "success");
+      } else {
+        document.getElementById("pin-error-msg").classList.remove("hidden");
+      }
+    }
+
+    function logoutRole(role) {
+      unlockedRoles[role] = false;
+      switchRole("customer");
+      showToast("Session locked safely.", "info");
+    }
+
+    // =========================================================================
+    // 10. BLINKIT-STYLE LIVE ORDER TRACKER
+    // =========================================================================
+    function lookupOrderById() {
+      const val = document.getElementById("track-order-id-input").value.trim().toUpperCase();
+      if (!val) return;
+      const found = orders.find(o => o.id.toUpperCase() === val);
+      if (found) {
+        trackedOrderId = found.id;
+        renderLiveOrderTracker();
+        showToast(`Showing live status for ${found.id}`, "success");
+      } else {
+        showToast(`Order ID "${val}" not found.`, "error");
+      }
+    }
+
+    function renderLiveOrderTracker() {
+      const container = document.getElementById("tracker-content-area");
+      const activeDot = document.getElementById("active-order-dot");
+
+      const activeExists = orders.some(o => o.statusStep < 4);
+      activeDot.classList.toggle("hidden", !activeExists);
+
+      if (orders.length === 0) {
+        container.innerHTML = `<p class="text-xs text-slate-500 text-center py-8">No orders found yet. Place an express order from the Store!</p>`;
+        return;
+      }
+
+      const order = orders.find(o => o.id === trackedOrderId) || orders[0];
+      document.getElementById("track-order-id-input").value = order.id;
+
+      const isDelivered = order.statusStep >= 4;
+      const etaText = isDelivered
+        ? "दवाई सुरक्षित डिलीवर हो गई है (Delivered)"
+        : order.statusStep === 3
+          ? "बस 12 मिनट में आपके घर पहुँच रही है"
+          : order.statusStep === 2
+            ? "डिलीवरी पार्टनर निकल चुके हैं • 18 मिनट में डिलीवरी"
+            : "मेडिकल स्टोर से दवाई पैक हो रही है • ~22 मिनट";
+
+      container.innerHTML = `
+        <div class="space-y-4">
+          <!-- Top ETA & Order Banner -->
+          <div class="bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-2xl p-4 flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded uppercase">${order.id}</span>
+                <span class="text-xs font-bold text-emerald-100">${order.type}</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-black mt-1 flex items-center gap-2">
+                <i data-lucide="clock" class="w-5 h-5 text-amber-300"></i> ${etaText}
+              </h3>
+              <p class="text-xs text-emerald-50 mt-0.5">डिलीवरी पता: <strong>${order.customerName}</strong> • ${order.address}</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <a href="tel:+917870564801" class="bg-white text-emerald-900 hover:bg-emerald-50 font-extrabold text-xs px-3.5 py-2 rounded-xl inline-flex items-center gap-1.5 shadow-sm">
+                <i data-lucide="phone-call" class="w-3.5 h-3.5"></i> डिलीवरी पार्टनर को कॉल करें
+              </a>
+              <a href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent('नमस्ते Buxar Meds, मेरे ऑर्डर ' + order.id + ' का क्या स्टेटस है?')}" target="_blank" class="bg-slate-900/80 hover:bg-slate-900 text-white font-bold text-xs px-3 py-2 rounded-xl inline-flex items-center gap-1.5">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <!-- Vertical Blinkit Stepper -->
+          <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 space-y-4">
+            <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-500">ऑर्डर की लाइव यात्रा (Real-Time Order Journey)</h4>
+            <div class="space-y-4 relative pl-2">
+              ${ORDER_STEPS.map((stepLabel, idx) => {
+                const completed = idx < order.statusStep;
+                const current = idx === order.statusStep;
+                const subDescriptions = [
+                  "आपका ऑर्डर Buxar Meds एक्सप्रेस डेस्क को मिल गया है",
+                  "बक्सर के अधिकृत मेडिकल स्टोर से 100% असली ब्रांडेड दवाई और एक्सपायरी चेक हो गई है",
+                  "डिलीवरी पार्टनर: अजीत कुमार (+91 7870564801) दवाई लेकर निकलने वाले हैं",
+                  "डिलीवरी पार्टनर आपके बक्सर के पते की ओर रास्ते में हैं",
+                  "पक्के बिल के साथ दवाई सुरक्षित आपके दरवाजे पर दे दी गई है"
+                ];
+
+                return `
+                  <div class="flex items-start gap-3.5 relative">
+                    ${idx < ORDER_STEPS.length - 1 ? `
+                      <div class="absolute left-[13px] top-7 bottom-[-18px] w-0.5 ${completed ? 'bg-emerald-600' : 'bg-slate-200'}"></div>
+                    ` : ''}
+                    <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 z-10 font-bold text-xs ${
+                      completed 
+                        ? 'bg-emerald-600 text-white' 
+                        : current 
+                          ? 'bg-emerald-600 text-white live-pulse ring-4 ring-emerald-100' 
+                          : 'bg-slate-200 text-slate-500'
+                    }">
+                      ${completed ? '<i data-lucide="check" class="w-4 h-4"></i>' : (idx + 1)}
+                    </div>
+                    <div class="flex-1 pt-0.5">
+                      <div class="flex items-center gap-2">
+                        <p class="text-xs sm:text-sm font-extrabold ${completed || current ? 'text-slate-900' : 'text-slate-400'}">${stepLabel}</p>
+                        ${current && !isDelivered ? '<span class="text-[10px] font-extrabold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">LIVE</span>' : ''}
+                      </div>
+                      <p class="text-[11px] text-slate-500 mt-0.5">${subDescriptions[idx]}</p>
+                    </div>
+                  </div>
+                `;
+              }).join("")}
+            </div>
+          </div>
+
+          <!-- Order Summary Box -->
+          <div class="bg-white border border-slate-200 rounded-2xl p-3.5 space-y-2 text-xs">
+            <div class="flex justify-between font-extrabold text-slate-800 border-b border-slate-100 pb-2">
+              <span>Order Items & Billing Summary</span>
+              <span class="text-emerald-700">${typeof order.grandTotal === 'number' ? '₹' + order.grandTotal : order.grandTotal}</span>
+            </div>
+            ${order.items.map(it => `
+              <div class="flex justify-between text-slate-600">
+                <span>• ${it.name} ${it.qty > 1 ? `x ${it.qty}` : ''}</span>
+                <span class="font-bold text-slate-800">${it.price > 0 ? '₹' + (it.price * it.qty) : ''}</span>
+              </div>
+            `).join("")}
+            ${order.notes ? `<p class="text-[11px] text-slate-500 pt-1 border-t border-slate-100"><strong>Notes:</strong> ${order.notes}</p>` : ''}
+          </div>
+        </div>
+      `;
+      lucide.createIcons();
+    }
+
+    // =========================================================================
+    // 11. DELIVERY PARTNER (RIDER) MODE (PIN: 2026)
+    // =========================================================================
+    function toggleRiderDuty() {
+      riderOnline = !riderOnline;
+      const btn = document.getElementById("rider-duty-btn");
+      const label = document.getElementById("rider-duty-label");
+      if (riderOnline) {
+        btn.classList.remove("bg-slate-700", "text-slate-200");
+        btn.classList.add("bg-emerald-500", "text-slate-950");
+        label.textContent = "ONLINE • Ready for Orders";
+        showToast("You are now ONLINE for Buxar express deliveries!", "success");
+      } else {
+        btn.classList.remove("bg-emerald-500", "text-slate-950");
+        btn.classList.add("bg-slate-700", "text-slate-200");
+        label.textContent = "OFFLINE • Break Mode";
+        showToast("Rider status set to OFFLINE.", "info");
+      }
+    }
+
+    function advanceRiderOrderStep(orderId) {
+      const idx = orders.findIndex(o => o.id === orderId);
+      if (idx === -1) return;
+      if (orders[idx].statusStep < 4) {
+        orders[idx].statusStep += 1;
+        saveOrders();
+        renderRiderDashboard();
+        showToast(`Order ${orderId} updated to: ${ORDER_STEPS[orders[idx].statusStep]}`, "success");
+      }
+    }
+
+    function renderRiderDashboard() {
+      const activeOrders = orders.filter(o => o.statusStep < 4);
+      const completedOrders = orders.filter(o => o.statusStep >= 4);
+      const cashToCollect = activeOrders.reduce((sum, o) => sum + (typeof o.grandTotal === "number" ? o.grandTotal : 0), 0);
+
+      document.getElementById("rider-active-count").textContent = activeOrders.length;
+      document.getElementById("rider-completed-count").textContent = completedOrders.length;
+      document.getElementById("rider-collect-amount").textContent = `₹${cashToCollect}`;
+
+      const list = document.getElementById("rider-orders-list");
+      if (orders.length === 0) {
+        list.innerHTML = `<div class="bg-white rounded-2xl p-8 text-center text-xs text-slate-500 border border-slate-200">No active deliveries in queue right now.</div>`;
+        return;
+      }
+
+      list.innerHTML = orders.map(ord => {
+        const isDone = ord.statusStep >= 4;
+        let nextActionLabel = "Mark Pharmacy Sourced & Verified";
+        if (ord.statusStep === 1) nextActionLabel = "Assign Self & Confirm Pickup";
+        if (ord.statusStep === 2) nextActionLabel = "Start Delivery (Out for Delivery)";
+        if (ord.statusStep === 3) nextActionLabel = "Complete Delivery (Mark Delivered)";
+
+        return `
+          <div class="bg-white rounded-2xl border ${isDone ? 'border-slate-200 opacity-75' : 'border-emerald-300 shadow-sm'} p-4 space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2 border-b border-slate-100 pb-2.5">
+              <div>
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-xs font-black bg-slate-900 text-white px-2 py-0.5 rounded">${ord.id}</span>
+                  <span class="text-[11px] font-extrabold px-2 py-0.5 rounded-full ${
+                    isDone ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-900'
+                  }">${ORDER_STEPS[ord.statusStep]}</span>
+                </div>
+                <h4 class="text-sm font-black text-slate-900 mt-1">${ord.customerName}</h4>
+                <p class="text-xs text-slate-600 flex items-center gap-1 mt-0.5">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-600 flex-shrink-0"></i> ${ord.address}
+                </p>
+              </div>
+
+              <div class="text-right">
+                <p class="text-[10px] font-bold text-slate-400 uppercase">Collect Payment</p>
+                <p class="text-base font-black text-emerald-700">${typeof ord.grandTotal === 'number' ? '₹' + ord.grandTotal : ord.grandTotal}</p>
+              </div>
+            </div>
+
+            <!-- Pharmacy Pickup Checklist -->
+            <div class="bg-slate-50 rounded-xl p-3 space-y-1.5">
+              <p class="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">Chemist Pickup Checklist (Verify Batch & Expiry):</p>
+              ${ord.items.map(it => `
+                <label class="flex items-center gap-2 text-xs font-semibold text-slate-800 cursor-pointer">
+                  <input type="checkbox" ${ord.statusStep >= 1 ? 'checked' : ''} class="rounded text-emerald-600 focus:ring-emerald-500">
+                  <span>${it.name} ${it.qty > 1 ? `<strong>(Qty: ${it.qty})</strong>` : ''}</span>
+                </label>
+              `).join("")}
+              ${ord.notes ? `<p class="text-[11px] text-rose-700 font-medium pt-1">Note: ${ord.notes}</p>` : ''}
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <a href="tel:${ord.phone}" class="bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-600"></i> Call Customer
+              </a>
+              <a href="https://maps.google.com/?q=${encodeURIComponent(ord.address + ', Buxar, Bihar')}" target="_blank" class="bg-teal-50 hover:bg-teal-100 text-teal-900 border border-teal-200 font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5">
+                <i data-lucide="navigation" class="w-3.5 h-3.5 text-teal-600"></i> Google Maps
+              </a>
+              ${!isDone ? `
+                <button onclick="advanceRiderOrderStep('${ord.id}')" class="col-span-2 sm:col-span-1 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm flex items-center justify-center gap-1.5 transition">
+                  <i data-lucide="arrow-right-circle" class="w-4 h-4"></i> <span>${nextActionLabel}</span>
+                </button>
+              ` : `
+                <div class="col-span-2 sm:col-span-1 bg-emerald-50 text-emerald-800 border border-emerald-200 font-extrabold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center gap-1">
+                  <i data-lucide="check-circle-2" class="w-4 h-4"></i> Completed
+                </div>
+              `}
+            </div>
+          </div>
+        `;
+      }).join("");
+      lucide.createIcons();
+    }
+
+    // =========================================================================
+    // 12. OWNER ADMIN DASHBOARD (PIN: 1997)
+    // =========================================================================
+    function switchAdminSubTab(tab) {
+      adminSubTab = tab;
+      const ordersBtn = document.getElementById("admin-subtab-orders");
+      const catalogBtn = document.getElementById("admin-subtab-catalog");
+      const ordersPanel = document.getElementById("admin-panel-orders");
+      const catalogPanel = document.getElementById("admin-panel-catalog");
+
+      if (tab === "orders") {
+        ordersBtn.classList.add("bg-emerald-600", "text-white", "shadow-sm");
+        ordersBtn.classList.remove("bg-white", "text-slate-700", "border");
+        catalogBtn.classList.remove("bg-emerald-600", "text-white", "shadow-sm");
+        catalogBtn.classList.add("bg-white", "text-slate-700", "border");
+        ordersPanel.classList.remove("hidden");
+        catalogPanel.classList.add("hidden");
+      } else {
+        catalogBtn.classList.add("bg-emerald-600", "text-white", "shadow-sm");
+        catalogBtn.classList.remove("bg-white", "text-slate-700", "border");
+        ordersBtn.classList.remove("bg-emerald-600", "text-white", "shadow-sm");
+        ordersBtn.classList.add("bg-white", "text-slate-700", "border");
+        catalogPanel.classList.remove("hidden");
+        ordersPanel.classList.add("hidden");
+      }
+    }
+
+    function renderOwnerDashboard() {
+      const totalOrders = orders.length;
+      const totalRevenue = orders.reduce((sum, o) => sum + (typeof o.grandTotal === "number" ? o.grandTotal : 0), 0);
+      const totalProfit = orders.reduce((sum, o) => sum + (o.estimatedProfit || 0), 0);
+      const pendingDeliveries = orders.filter(o => o.statusStep < 4).length;
+
+      document.getElementById("admin-total-orders").textContent = totalOrders;
+      document.getElementById("admin-total-revenue").textContent = `₹${totalRevenue}`;
+      document.getElementById("admin-total-profit").textContent = `₹${totalProfit}`;
+      document.getElementById("admin-pending-deliveries").textContent = pendingDeliveries;
+      document.getElementById("admin-orders-badge").textContent = totalOrders;
+      document.getElementById("admin-catalog-badge").textContent = products.length;
+
+      // Render Orders Panel
+      const ordersPanel = document.getElementById("admin-panel-orders");
+      if (orders.length === 0) {
+        ordersPanel.innerHTML = `<div class="bg-white rounded-2xl p-6 text-center text-xs text-slate-500">No orders recorded yet.</div>`;
+      } else {
+        ordersPanel.innerHTML = orders.map((ord, idx) => `
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-xs space-y-2.5">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-2">
+              <div>
+                <span class="font-mono text-xs font-black bg-slate-100 text-slate-800 px-2 py-0.5 rounded">${ord.id}</span>
+                <span class="text-[11px] font-bold text-emerald-700 ml-1">${ord.type}</span>
+                <h4 class="text-sm font-extrabold text-slate-900 mt-1">${ord.customerName} • <a href="tel:${ord.phone}" class="text-teal-700 underline">${ord.phone}</a></h4>
+                <p class="text-xs text-slate-500">${ord.address}</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <select onchange="adminChangeOrderStep(${idx}, this.value)" class="text-xs font-bold bg-slate-50 border border-slate-300 rounded-xl px-2.5 py-1.5">
+                  ${ORDER_STEPS.map((st, sIdx) => `<option value="${sIdx}" ${ord.statusStep === sIdx ? 'selected' : ''}>${st}</option>`).join("")}
+                </select>
+                <button onclick="adminDeleteOrder(${idx})" class="p-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600" title="Delete Order">
+                  <i data-lucide="trash-2" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs bg-slate-50 p-2.5 rounded-xl">
+              <div>
+                ${ord.items.map(i => `<span class="block text-slate-700 font-medium">• ${i.name} (x${i.qty})</span>`).join("")}
+              </div>
+              <div class="text-right">
+                <p class="font-black text-slate-900">Total: ${typeof ord.grandTotal === 'number' ? '₹' + ord.grandTotal : ord.grandTotal}</p>
+                <p class="text-[11px] font-bold text-emerald-700">Est. Net Profit: ₹${ord.estimatedProfit || 0}</p>
+              </div>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      // Render Catalog Manager Panel
+      const catalogPanel = document.getElementById("admin-panel-catalog");
+      catalogPanel.innerHTML = products.map((prod, idx) => {
+        const salePrice = getDiscountedPrice(prod);
+        const cost = prod.costPrice || 0;
+        const profit = salePrice - cost;
+
+        return `
+          <div class="bg-white rounded-2xl border border-slate-200 p-3.5 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-3 min-w-0 flex-1">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 flex items-center justify-center flex-shrink-0">
+                ${getProductSvgIllustration(prod.iconType)}
+              </div>
+              <div class="min-w-0">
+                <div class="flex items-center gap-1.5">
+                  <h4 class="text-xs sm:text-sm font-extrabold text-slate-900 truncate">${prod.name}</h4>
+                  ${prod.inStock === false ? '<span class="text-[9px] font-bold bg-rose-100 text-rose-700 px-1.5 py-0.5 rounded">Out of Stock</span>' : ''}
+                </div>
+                <p class="text-[11px] text-slate-500">${prod.brand} • ${prod.category} • ${prod.pack}</p>
+                <p class="text-[11px] font-semibold text-slate-700 mt-0.5">
+                  MRP: ₹${prod.mrp} | Customer (${prod.discountPercent}% Off): <strong class="text-emerald-700">₹${salePrice}</strong> | Wholesale Cost: ₹${cost} | <strong class="text-amber-700">Profit: ₹${profit}</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-1.5">
+              <button onclick="adminToggleStock(${idx})" class="px-2.5 py-1.5 rounded-xl text-[11px] font-bold border ${prod.inStock === false ? 'bg-rose-50 text-rose-700 border-rose-200' : 'bg-emerald-50 text-emerald-700 border-emerald-200'}">
+                ${prod.inStock === false ? 'Out of Stock' : 'In Stock'}
+              </button>
+              <button onclick="openAdminProductModal('${prod.id}')" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700" title="Edit Medicine">
+                <i data-lucide="pencil" class="w-4 h-4"></i>
+              </button>
+              <button onclick="adminDeleteProduct('${prod.id}')" class="p-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600" title="Delete Medicine">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      lucide.createIcons();
+    }
+
+    function adminChangeOrderStep(index, newStep) {
+      orders[index].statusStep = parseInt(newStep, 10);
+      saveOrders();
+      renderOwnerDashboard();
+      showToast("Order status updated!", "success");
+    }
+
+    function adminDeleteOrder(index) {
+      orders.splice(index, 1);
+      saveOrders();
+      renderOwnerDashboard();
+      showToast("Order deleted.", "info");
+    }
+
+    function adminToggleStock(index) {
+      products[index].inStock = products[index].inStock === false ? true : false;
+      saveProducts();
+      renderOwnerDashboard();
+      renderProductGrid();
+    }
+
+    function adminDeleteProduct(id) {
+      products = products.filter(p => p.id !== id);
+      saveProducts();
+      renderOwnerDashboard();
+      renderProductGrid();
+      showToast("Item removed from catalog.", "info");
+    }
+
+    function openAdminProductModal(productId) {
+      const modal = document.getElementById("modal-admin-product");
+      if (productId) {
+        const p = products.find(item => item.id === productId);
+        if (!p) return;
+        document.getElementById("admin-prod-modal-title").textContent = "Edit Branded Medicine / Device";
+        document.getElementById("prod-form-id").value = p.id;
+        document.getElementById("prod-form-name").value = p.name;
+        document.getElementById("prod-form-brand").value = p.brand;
+        document.getElementById("prod-form-category").value = p.category;
+        document.getElementById("prod-form-pack").value = p.pack;
+        document.getElementById("prod-form-icon").value = p.iconType || "tablet";
+        document.getElementById("prod-form-salt").value = p.salt;
+        document.getElementById("prod-form-mrp").value = p.mrp;
+        document.getElementById("prod-form-discount").value = p.discountPercent || 20;
+        document.getElementById("prod-form-cost").value = p.costPrice || 0;
+      } else {
+        document.getElementById("admin-prod-modal-title").textContent = "Add New Branded Medicine / Device";
+        document.getElementById("prod-form-id").value = "";
+        document.getElementById("prod-form-name").value = "";
+        document.getElementById("prod-form-brand").value = "";
+        document.getElementById("prod-form-category").value = "Branded Medicines";
+        document.getElementById("prod-form-pack").value = "";
+        document.getElementById("prod-form-icon").value = "tablet";
+        document.getElementById("prod-form-salt").value = "";
+        document.getElementById("prod-form-mrp").value = "";
+        document.getElementById("prod-form-discount").value = 20;
+        document.getElementById("prod-form-cost").value = "";
+      }
+      previewAdminMargin();
+      modal.classList.remove("hidden");
+      lucide.createIcons();
+    }
+
+    function closeAdminProductModal() {
+      document.getElementById("modal-admin-product").classList.add("hidden");
+    }
+
+    function previewAdminMargin() {
+      const mrp = parseFloat(document.getElementById("prod-form-mrp").value) || 0;
+      const disc = parseFloat(document.getElementById("prod-form-discount").value) || 0;
+      const cost = parseFloat(document.getElementById("prod-form-cost").value) || 0;
+      const sale = Math.round(mrp - (mrp * disc / 100));
+      const profit = sale - cost;
+      document.getElementById("admin-preview-sale").textContent = `₹${sale}`;
+      document.getElementById("admin-preview-profit").textContent = `₹${profit}`;
+    }
+
+    function saveAdminProduct() {
+      const id = document.getElementById("prod-form-id").value;
+      const name = document.getElementById("prod-form-name").value.trim();
+      const brand = document.getElementById("prod-form-brand").value.trim();
+      const category = document.getElementById("prod-form-category").value;
+      const pack = document.getElementById("prod-form-pack").value.trim() || "1 Pack";
+      const iconType = document.getElementById("prod-form-icon").value;
+      const salt = document.getElementById("prod-form-salt").value.trim() || "100% Genuine Branded Product";
+      const mrp = parseFloat(document.getElementById("prod-form-mrp").value) || 0;
+      const discountPercent = parseFloat(document.getElementById("prod-form-discount").value) || 20;
+      const costPrice = parseFloat(document.getElementById("prod-form-cost").value) || 0;
+
+      if (!name || !brand || mrp <= 0) {
+        showToast("Please enter Product Name, Brand & valid MRP.", "error");
+        return;
+      }
+
+      if (id) {
+        const idx = products.findIndex(p => p.id === id);
+        if (idx !== -1) {
+          products[idx] = {
+            ...products[idx],
+            name, brand, category, pack, iconType, salt, mrp, discountPercent, costPrice
+          };
+        }
+      } else {
+        products.unshift({
+          id: "bm-" + Date.now(),
+          name, brand, category, pack, iconType, salt, mrp, discountPercent, costPrice,
+          inStock: true
+        });
+      }
+
+      saveProducts();
+      renderProductGrid();
+      renderOwnerDashboard();
+      closeAdminProductModal();
+      showToast("Branded product saved successfully!", "success");
+    }
+
+    // =========================================================================
+    // 13. TOAST NOTIFICATIONS & BOOTSTRAP
+    // =========================================================================
+    function showToast(message, type = "info") {
+      const container = document.getElementById("toast-container");
+      const toast = document.createElement("div");
+      const bgClass = type === "error"
+        ? "bg-rose-600 text-white"
+        : type === "success"
+          ? "bg-emerald-700 text-white"
+          : "bg-slate-900 text-white";
+
+      toast.className = `${bgClass} text-xs font-bold px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2 slide-up`;
+      toast.innerHTML = `<span>${message}</span>`;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.remove();
+      }, 3000);
+    }
+
+    function renderAll() {
+      renderProductGrid();
+      updateStickyCartBar();
+      renderLiveOrderTracker();
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      loadState();
+      renderAll();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
