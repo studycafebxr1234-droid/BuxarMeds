@@ -1,0 +1,16 @@
+{
+  "name": "Buxar Meds 24x7",
+  "short_name": "Buxar Meds",
+  "start_url": "/Buxarmeds/",
+  "scope": "/Buxarmeds/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3022/3022293.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
